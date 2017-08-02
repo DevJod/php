@@ -1,0 +1,18 @@
+# baseurl: /foo
+
+markdown: redcarpet
+redcarpet:
+    extensions: [with_toc_data]
+
+highlighter: rouge
+permalink:   pretty
+
+exclude:
+  - node_modules/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "artigo"

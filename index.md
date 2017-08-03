@@ -1,6 +1,5 @@
 ---
 layout: index
-permalink: /
 ---
 
-home
+[php](php/)

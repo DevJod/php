@@ -1,8 +1,8 @@
 # baseurl: /foo
 
-markdown: redcarpet
-redcarpet:
-    extensions: [with_toc_data]
+#markdown: redcarpet
+#redcarpet:
+#    extensions: [with_toc_data]
 
 highlighter: rouge
 permalink:   pretty

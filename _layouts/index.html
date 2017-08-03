@@ -3,7 +3,7 @@
   <head>
     {% include head.html %}
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#toc">
 
     <div class="container">
       <div class="row">
@@ -15,7 +15,10 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-offset-1 col-md-10">{{ content }}</div>
+        <div class="col-md-8">{{ content }}</div>
+        <div class="col-md-4 hidden-xs">
+            <nav id="toc" data-toggle="toc" data-spy="affix"></nav> 
+        </div>        
       </div>
     </div>
 

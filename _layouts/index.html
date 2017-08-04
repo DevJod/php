@@ -15,7 +15,12 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-8">{{ content }}</div>
+        <div class="col-md-8">
+            <div class="page-header text-center">
+              <h1>{{ page.title }} <br /><small>{{page.description}}</small></h1>
+            </div>            
+            {{ content }}
+        </div>
         <div class="col-md-4 hidden-xs">
             <nav id="toc" data-toggle="toc" data-spy="affix"></nav> 
         </div>        

@@ -12,17 +12,19 @@ description: Aprenda PHP de verdade!
     <a href="/php/instalando-o-ambiente/" class="list-group-item">Instalar o ambiente Linux</a>
     <a href="/php/instalando-o-ambiente/" class="list-group-item">Instalar o ambiente Windows</a>
     <a href="/php/foo/" class="list-group-item">Estamos prontos para começar ?</a>
-    <a href="/php/foo/" class="list-group-item">Sintaxe básica</a>
+    <a href="/php/sintaxe-basica-de-php/" class="list-group-item">Sintaxe básica</a>
     <a href="/php/foo/" class="list-group-item">Mais um belo artigo</a>
 </div>
 
 
-## Capítulo 2
+## Capítulo 2 - Domando a fera
 
 <div class="list-group">
-    <a href="/php/foo/" class="list-group-item">Mais um belo artigo</a>
-    <a href="/php/foo/" class="list-group-item">Mais um belo artigo</a>
-    <a href="/php/foo/" class="list-group-item">Mais um belo artigo</a>
+    <a href="/php/criando-e-iterando-um-array-em-php/" class="list-group-item">Criando e iterando um array em PHP</a>
+    <a href="/php/foo/" class="list-group-item">Requisição de arquivos</a>
+    <a href="https://secure.php.net/manual/pt_BR/language.variables.predefined.php" class="list-group-item">Variáveis Pré-definidas</a>
+    <a href="http://php.net/manual/pt_BR/language.variables.variable.php" class="list-group-item">Variáveis variáveis</a>
+    <a href="https://secure.php.net/manual/pt_BR/language.variables.superglobals.php" class="list-group-item">Superglobais</a>
 </div>
 
 
@@ -57,7 +59,7 @@ description: Aprenda PHP de verdade!
 <div class="list-group">
     <a href="/php/foo/" class="list-group-item">HTTP</a>
     <a href="/php/foo/" class="list-group-item">HTTP</a>
-    <a href="/php/foo/" class="list-group-item">HTTP</a>
+    <a href="/php/foo/" class="list-group-item">Fazendo upload de arquivos</a>
 </div>
 
 ## Capítulo X - Interagindo com Banco de Dados

@@ -75,7 +75,7 @@ Abra um editor de texto qualquer e crie um arquivo PHP que faça alguma coisa, n
 ## Desafios
 
 1. Releia o artigo e me diz qual foi a sua dúvida nos comentários abaixo.
-2. Procure na web por cada um dos itens avaixo que você desconhece...
+2. Procure na web por cada um dos itens abaixo que você desconhece...
     - modelo cliente-servidor
     - protocole HTTP
     - códigos de resposta do protocolo HTTP (200, 404, 500, 501, etc...)

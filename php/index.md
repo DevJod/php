@@ -9,11 +9,10 @@ description: Aprenda PHP de verdade!
 
 <div class="list-group">
     <a href="/php/o-que-e-php/" class="list-group-item">O que é PHP</a>
-    <a href="/php/instalando-o-ambiente/" class="list-group-item">Instalar o ambiente Linux</a>
-    <a href="/php/instalando-o-ambiente/" class="list-group-item">Instalar o ambiente Windows</a>
+    <a href="/php/instalando-o-ambiente/" class="list-group-item">Instalando o ambiente Linux</a>
+    <a href="/php/instalando-o-ambiente/" class="list-group-item">Instalando o ambiente Windows</a>
     <a href="/php/foo/" class="list-group-item">Estamos prontos para começar ?</a>
     <a href="/php/sintaxe-basica-de-php/" class="list-group-item">Sintaxe básica</a>
-    <a href="/php/foo/" class="list-group-item">Mais um belo artigo</a>
 </div>
 
 
@@ -42,10 +41,10 @@ description: Aprenda PHP de verdade!
 ## Capítulo X - O básico sobre Programação Orientada a Objeto
 
 <div class="list-group">
-    <a href="/php/foo/" class="list-group-item">PSR-0</a>
-    <a href="/php/foo/" class="list-group-item">PSR-1</a>
-    <a href="/php/foo/" class="list-group-item">PSR-2</a>
-    <a href="/php/foo/" class="list-group-item">PSR-3</a>
+    <a href="/php/foo/" class="list-group-item">oop</a>
+    <a href="/php/foo/" class="list-group-item">oop</a>
+    <a href="/php/foo/" class="list-group-item">oop</a>
+    <a href="/php/foo/" class="list-group-item">oop</a>
 </div>
 
 ## Capítulo X - Fazendo Requisições HTTP (post e get)

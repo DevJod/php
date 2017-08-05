@@ -13,6 +13,7 @@ description: Aprenda PHP de verdade!
     <a href="/php/instalando-o-ambiente/" class="list-group-item">Instalando o ambiente Windows</a>
     <a href="/php/foo/" class="list-group-item">Estamos prontos para começar ?</a>
     <a href="/php/sintaxe-basica-de-php/" class="list-group-item">Sintaxe básica</a>
+    <a href="/php/debugando-codigo/" class="list-group-item">Debugando código em PHP</a>
 </div>
 
 

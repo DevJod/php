@@ -2,7 +2,7 @@
 title:       Sintaxe básica de PHP
 description: 
 capitulo:    "php-capitulo-1"
-ordem:       4
+ordem:       5
 ---
 
 ## Variáveis

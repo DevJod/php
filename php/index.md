@@ -56,11 +56,14 @@ description: Aprenda PHP de verdade!
     <a href="/php/recebendo-dados-via-get-post/" class="list-group-item">Recebendo dados via GET e POST</a>
 </div>
 
-## Capítulo X - Lidando com formulários
+## Capítulo 6 - Lidando com formulários
 
 <div class="list-group">
-    <a href="/php/foo/" class="list-group-item">HTTP</a>
-    <a href="/php/foo/" class="list-group-item">HTTP</a>
+    <a href="/php/manipulando-os-controles-text-password-e-textarea/" class="list-group-item">Manipulando os controles text, password e textarea</a>
+    <a href="/php/manipulando-checkboxes-com-php/" class="list-group-item">Manipulando checkboxes com PHP</a>
+    <a href="/php/manipulando-radio-button-com-php/" class="list-group-item">Manipulando radio button com PHP</a>
+    <a href="/php/manipulando-combobox-com-php/" class="list-group-item">Manipulando combobox com PHP</a>
+    <a href="/php/manipulando-listbox-com-php/" class="list-group-item">Manipulando listbox com PHP</a>
     <a href="/php/foo/" class="list-group-item">Fazendo upload de arquivos</a>
 </div>
 

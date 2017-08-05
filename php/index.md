@@ -51,7 +51,7 @@ description: Aprenda PHP de verdade!
 ## Capítulo X - Fazendo Requisições HTTP (post e get)
 
 <div class="list-group">
-    <a href="/php/foo/" class="list-group-item">HTTP</a>
+    <a href="/php/como-funcionam-os-metodos-get-e-post/" class="list-group-item">Como funcionam os métodos GET e POST</a>
     <a href="/php/foo/" class="list-group-item">HTTP</a>
     <a href="/php/foo/" class="list-group-item">HTTP</a>
 </div>

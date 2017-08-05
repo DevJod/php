@@ -9,6 +9,7 @@ permalink:   pretty
 
 exclude:
   - node_modules/
+  - nbproject/
 
 defaults:
   -

@@ -1,11 +1,11 @@
 ---
 layout:      index
-title:       PHP
+title:       PHP7
 description: Aprenda PHP de verdade!
 ---
 
 
-## Capítulo 1 - Começando com PHP 7
+## Capítulo 1 - Começando
 
 <div class="list-group">
     <a href="/php/o-que-e-php/" class="list-group-item">O que é PHP</a>
@@ -20,7 +20,9 @@ description: Aprenda PHP de verdade!
 ## Capítulo 2 - Domando a fera
 
 <div class="list-group">
-    <a href="/php/criando-e-iterando-um-array-em-php/" class="list-group-item">Criando e iterando um array em PHP</a>
+    <a href="/php/if-else/" class="list-group-item">Expressões Condicionais</a>
+    <a href="/php/criando-e-iterando-um-array-em-php/" class="list-group-item">Criando e iterando um array</a>
+    <a href="/php/funcoes/" class="list-group-item">Funcões</a>
     <a href="/php/foo/" class="list-group-item">Requisição de arquivos</a>
     <a href="https://secure.php.net/manual/pt_BR/language.variables.predefined.php" class="list-group-item">Variáveis Pré-definidas</a>
     <a href="http://php.net/manual/pt_BR/language.variables.variable.php" class="list-group-item">Variáveis variáveis</a>

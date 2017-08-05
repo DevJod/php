@@ -48,7 +48,7 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">oop</a>
 </div>
 
-## Capítulo X - Fazendo Requisições HTTP (post e get)
+## Capítulo 5 - Fazendo Requisições HTTP (post e get)
 
 <div class="list-group">
     <a href="/php/como-funcionam-os-metodos-get-e-post/" class="list-group-item">Como funcionam os métodos GET e POST</a>
@@ -82,20 +82,20 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">Twig</a>
 </div>
 
-## Capítulo X - Slim a micro framework for PHP
+## Capítulo 9 - Slim a micro framework for PHP
 
 <div class="list-group">
-    <a href="/php/foo/" class="list-group-item">Slim</a>
+    <a href="/php/hello-world-com-slimframework/" class="list-group-item">Hello World com slimframework</a>
     <a href="/php/foo/" class="list-group-item">Slim</a>
     <a href="/php/foo/" class="list-group-item">Slim</a>
 </div>
 
-## Capítulo X - Expressões Regulares
+## Capítulo 10 - Expressões Regulares
 
 <div class="list-group">
-    <a href="/php/foo/" class="list-group-item">Slim</a>
-    <a href="/php/foo/" class="list-group-item">Slim</a>
-    <a href="/php/foo/" class="list-group-item">Slim</a>
+    <a href="/php/o-basico-sobre-a-função-preg-match/" class="list-group-item">O básico sobre a função preg match</a>
+    <a href="/php/o-basico-sobre-a-funcao-preg-match-all/" class="list-group-item">O básico sobre a função preg match all</a>
+    <a href="/php/o-basico-sobre-a-função-preg-match/" class="list-group-item">O básico sobre a função preg match</a>
 </div>
 
 ## Sua vez

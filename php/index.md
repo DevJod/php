@@ -48,12 +48,12 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">oop</a>
 </div>
 
-## Capítulo 5 - Fazendo Requisições HTTP (post e get)
+## Capítulo 5 - O mínimo sobre o protocolo HTTP
 
 <div class="list-group">
     <a href="/php/como-funcionam-os-metodos-get-e-post/" class="list-group-item">Como funcionam os métodos GET e POST</a>
-    <a href="/php/foo/" class="list-group-item">HTTP</a>
-    <a href="/php/foo/" class="list-group-item">HTTP</a>
+    <a href="/php/enviando-dados-via-get-post/" class="list-group-item">Enviado dados via GET e POST</a>
+    <a href="/php/recebendo-dados-via-get-post/" class="list-group-item">Recebendo dados via GET e POST</a>
 </div>
 
 ## Capítulo X - Lidando com formulários

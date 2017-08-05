@@ -1,8 +1,8 @@
 ---
-title:       Criando e iterando um array em PHP
+title:       Criando e iterando um array
 description: Aprenda como criar e iterar arrays em php com foreach e while
 capitulo:    "php-capitulo-2"
-ordem:       1
+ordem:       2
 ---
 
 Array é uma estrutura que relaciona valores e chaves, é uma lista de valores armazenados na memória.

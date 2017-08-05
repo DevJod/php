@@ -1,7 +1,7 @@
 ---
 title:       Manipulando checkboxes com PHP
 description: "Veremos como enviar e receber dados através do controle checkbox (input type='check')"
-capitulo:    "php-capitulo-6"
+capitulo:    "formularios"
 ordem:       2
 ---
 

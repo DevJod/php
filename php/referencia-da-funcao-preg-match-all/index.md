@@ -2,7 +2,7 @@
 title:       Referência da função preg_match_all
 description: Uma referência prática da função preg match all
 serie:       PHP e Expressão Regular
-capitulo:    "php-capitulo-10"
+capitulo:    "regex"
 ordem:       3
 ---
 

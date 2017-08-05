@@ -2,7 +2,7 @@
 title:       Funcões
 description: "As funções introduzem o conceito de reusabilidade, ou seja, 'escrever código para depois'. Funções são uma seção nomeada de código, um pequeno (normalmente pequeno) trecho de código que pode ser chamado de
 diversos ponto do código"
-capitulo:    "php-capitulo-2"
+capitulo:    "conhecendo-o-inimigo"
 ordem:       3
 ---
 

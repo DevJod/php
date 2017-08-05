@@ -1,7 +1,7 @@
 ---
 title:       O que é php?
 description: Artigo introdutório sobre PHP
-capitulo:    "php-capitulo-1"
+capitulo:    "começando"
 ordem:       1
 ---
 

@@ -1,7 +1,7 @@
 ---
 title:       Manipulando combobox com PHP
 description: Veremos como enviar e receber dados através do controle combobox (input-form-select)
-capitulo:    "php-capitulo-6"
+capitulo:    "formularios"
 ordem:       4
 ---
 

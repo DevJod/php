@@ -1,7 +1,7 @@
 ---
 title:       Debugando código em PHP
 description: "O primeiro passo para quem precisa investigar o que o computador está executando."
-capitulo:    "php-capitulo-1"
+capitulo:    "começando"
 ordem:       6
 ---
 

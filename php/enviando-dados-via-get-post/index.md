@@ -1,7 +1,7 @@
 ---
 title:       Enviado dados via GET e POST
 description: Estamos no navegador criando dois tipos de requisições GET e POST
-capitulo:    "php-capitulo-5"
+capitulo:    "http"
 ordem:       2
 ---
 

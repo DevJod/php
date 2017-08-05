@@ -1,7 +1,7 @@
 ---
 title:       Manipulando radio button com PHP
 description: 'Veremos como enviar e receber dados através do controle radio button (input type="radio")'
-capitulo:    "php-capitulo-6"
+capitulo:    "formularios"
 ordem:       3
 ---
 

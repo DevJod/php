@@ -1,7 +1,7 @@
 ---
 title:       Hello World com slimframework
 description: Este artigo é um Hello World com o micro framework Slim
-capitulo:    "php-capitulo-9"
+capitulo:    "slimframework"
 ordem:       1
 ---
 

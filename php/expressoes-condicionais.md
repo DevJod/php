@@ -1,7 +1,7 @@
 ---
 title:       Expressões Condicionais
 description: Referência prática sobre Expressões Condicionais
-capitulo:    "php-capitulo-2"
+capitulo:    "conhecendo-o-inimigo"
 ordem:       1
 ---
 

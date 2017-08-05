@@ -1,7 +1,7 @@
 ---
 title:       Sintaxe básica de PHP
 description: 
-capitulo:    "php-capitulo-1"
+capitulo:    "começando"
 ordem:       5
 ---
 

@@ -1,7 +1,7 @@
 ---
 title:       Como funcionam os métodos GET e POST
 description: Introdução prática e descomplicada sobre o protocolo HTTP onde nosso objetivo é entender os métodos GET e POST.
-capitulo:    "php-capitulo-5"
+capitulo:    "http"
 ordem:       1
 ---
 

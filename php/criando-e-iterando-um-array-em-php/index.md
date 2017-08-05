@@ -1,7 +1,7 @@
 ---
 title:       Criando e iterando um array
 description: Aprenda como criar e iterar arrays em php com foreach e while
-capitulo:    "php-capitulo-2"
+capitulo:    "conhecendo-o-inimigo"
 ordem:       2
 ---
 

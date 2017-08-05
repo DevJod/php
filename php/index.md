@@ -4,7 +4,6 @@ title:       PHP7
 description: Aprenda PHP de verdade!
 ---
 
-
 ## Capítulo 1 - Começando
 
 <div class="list-group">
@@ -16,11 +15,10 @@ description: Aprenda PHP de verdade!
     <a href="/php/debugando-codigo/" class="list-group-item">Debugando código em PHP</a>
 </div>
 
-
-## Capítulo 2 - Domando a fera
+## Capítulo 2 - Conhecendo o inimigo
 
 <div class="list-group">
-    <a href="/php/if-else/" class="list-group-item">Expressões Condicionais</a>
+    <a href="/php/expressoes-condicionais/" class="list-group-item">Expressões Condicionais</a>
     <a href="/php/criando-e-iterando-um-array-em-php/" class="list-group-item">Criando e iterando um array</a>
     <a href="/php/funcoes/" class="list-group-item">Funcões</a>
     <a href="/php/foo/" class="list-group-item">Requisição de arquivos</a>
@@ -29,23 +27,24 @@ description: Aprenda PHP de verdade!
     <a href="https://secure.php.net/manual/pt_BR/language.variables.superglobals.php" class="list-group-item">Superglobais</a>
 </div>
 
+## Capítulo 3 - O básico sobre Programação Orientada a Objeto
 
-## Capítulo X - Foo
+<div class="list-group">
+    <a href="/php/foo/" class="list-group-item">oop</a>
+    <a href="/php/foo/" class="list-group-item">oop</a>
+    <a href="/php/foo/" class="list-group-item">oop</a>
+    <a href="/php/foo/" class="list-group-item">design pattern 1</a>
+    <a href="/php/foo/" class="list-group-item">design pattern 2</a>
+    <a href="/php/foo/" class="list-group-item">design pattern 3</a>
+</div>
+
+## Capítulo 4 - Domando a fera
 
 <div class="list-group">
     <a href="/php/foo/" class="list-group-item">PSR-0</a>
     <a href="/php/foo/" class="list-group-item">PSR-1</a>
     <a href="/php/foo/" class="list-group-item">PSR-2</a>
     <a href="/php/foo/" class="list-group-item">PSR-3</a>
-</div>
-
-## Capítulo X - O básico sobre Programação Orientada a Objeto
-
-<div class="list-group">
-    <a href="/php/foo/" class="list-group-item">oop</a>
-    <a href="/php/foo/" class="list-group-item">oop</a>
-    <a href="/php/foo/" class="list-group-item">oop</a>
-    <a href="/php/foo/" class="list-group-item">oop</a>
 </div>
 
 ## Capítulo 5 - O mínimo sobre o protocolo HTTP
@@ -67,7 +66,7 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">Fazendo upload de arquivos</a>
 </div>
 
-## Capítulo X - Interagindo com Banco de Dados
+## Capítulo 7 - Interagindo com Banco de Dados
 
 <div class="list-group">
     <a href="/php/foo/" class="list-group-item">DB</a>
@@ -77,7 +76,7 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">ORMs</a>
 </div>
 
-## Capítulo X - Twig - template engine
+## Capítulo 8 - Twig - template engine
 
 <div class="list-group">
     <a href="/php/foo/" class="list-group-item">Twig</a>

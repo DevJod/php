@@ -130,7 +130,7 @@ $arr = array("primeiro", "segundo", "terceiro");
 $arr = ["primeiro", "segundo", "terceiro"];
 ```
 
-Veja come acessar o valor de um array.
+Veja como acessar o valor de um array.
 
 ```php
 <?php
@@ -161,7 +161,7 @@ $arr = [
 ];
 ```
 
-Comumente, percorremos o array com a ajuda do `foreach`, veja:
+Normalmente, percorremos o array com a ajuda do `foreach`, veja:
 
 ```php
 <?php
@@ -171,6 +171,7 @@ foreach($arr as $valor) {
 // exibirá: "vermelha", "doce", "redonda", "maçã"
 ```
 
+Leia mais sobre [arrays](/php/criando-e-iterando-um-array-em-php/).
 
 
 
@@ -206,6 +207,7 @@ class Triangulo {
 }
 ```
 
+Leia mais sobre [objetos](/php/programacao-orientada-a-objetos/).
 
 
-Leia mais sobre [arrays](/php/criando-e-iterando-um-array-em-php/).
+

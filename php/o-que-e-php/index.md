@@ -1,12 +1,13 @@
 ---
 title:       O que é php?
-description: Artigo introdutório sobre PHP
+description: Uma introdução informal a linguagem PHP 7
 capitulo:    "começando"
 ordem:       1
 ---
 
 > O PHP é uma linguagem popular de script (scripting language) de propósito geral que é especialmente adequada para
-> desenvolvimento web. Rápido, flexível e pragmático, o PHP pode fazer tudo, desde um blog até os sites mais populares do mundo.
+> desenvolvimento web. Rápido, flexível e pragmático, o PHP pode fazer tudo, desde um blog até os sites mais populares 
+> do mundo.
 >
 > [Fonte: php.net](www.php.net)
 
@@ -25,7 +26,83 @@ requisições web.
 
 ![faltou imagem ilustrando as requisições](requisicoes.png "imagem ilustrando as requisições")
 
-Pode dormir e sonhar com essa imagem, é esse o fluxo (à grosso modo) de um modelo cliente/servidor.
+É esse o fluxo (à grosso modo) de um modelo cliente/servidor.
+
+Tente fixar essa imagem em sua memória.
+
+
+
+## Hello World com PHP
+
+Você pode abrir um editor de texto qualquer e criar um arquivo chamado `index.php`.
+
+Tenha a certeza de não ter nada escrito neste arquivo.
+
+Agora, adivinha o que faz esse script ? Nada, absolutamente nada. Seu script será interpretado como se fosse um arquivo 
+HTML, a única coisa que lembra que ele é um script é sua extensão `.php`.
+
+```php
+# index.php
+
+
+
+
+```
+
+A primeira coisa que você deve fazer é inserir a tag inicial de php `<?php`. E sim, temos a tag de fechamento `?>`, mas 
+não é necessário utilizá-la caso o conteúdo seja inteiro de php, veja exemplo abaixo.
+
+```php
+<?php
+
+
+
+```
+
+Agora seu arquivo se parece com um script php (rssss). Vamos dar vida a ele ?
+
+A função [echo](https://secure.php.net/manual/pt_BR/function.echo.php) exibe uma string. As strings são representadas e 
+envolvidas por aspas duplas ou simples.
+
+Ao final de cada linha, temos o símbolo `;`
+
+```php
+<?php
+
+echo "Oi, eu sou o PHP!";
+
+```
+
+Esse foi nosso "hello world".
+
+Se você tivesse um servidor web devidamente instalado e, junto com ele, o PHP também instalado, você poderia executar
+esse script. Você abre seu navegador e aciona a URL `http://localhost/index.php`.
+
+```
+http      - este é o protocolo
+://       - isso é, bem isso é uma chatisse
+localhost - ele procura no host local, sacou ?
+index.php - esse é o nome de seu script
+```
+Veremos como instalar o ambiente nos próximos artigos, por enquanto é importante você entender melhor o processo.
+
+
+## Hello world no terminal
+
+Não é só através de um navegador que executamos um script php, podemos fazer isso através do terminal.
+
+Quem usa Linux, já deve estar familiarizado com o terminal e quem usa Windows, não tem desculpa não, pois você pode
+usar o Power Shell, no terminal execute:
+
+    php index.php
+
+Aliás, no terminal, podemos acionar o servidor do php que vem embutido com alinguagem (disponível na versão 7).
+
+    php -s index.php
+
+Você conseguirá abrir a URL `http://127.0.0.1/index.php:8000`.
+
+Mas, por hora, vamos tentar entender o processo.
 
 
 ## Você precisa entender o processo
@@ -63,11 +140,6 @@ cliente/servidor e sobre requisições e respostas (requests and responses). Vej
 
 
 
-## Hello World com PHP
-
-Demonstrar um exemplo de "hello world"
-
-
 ## Exercício
 
 Abra um editor de texto qualquer e crie um arquivo PHP que faça alguma coisa, nem que seja um "hello world".
@@ -77,7 +149,7 @@ Abra um editor de texto qualquer e crie um arquivo PHP que faça alguma coisa, n
 1. Releia o artigo e me diz qual foi a sua dúvida nos comentários abaixo.
 2. Procure na web por cada um dos itens abaixo que você desconhece...
     - modelo cliente-servidor
-    - protocole HTTP
+    - protocolo HTTP
     - códigos de resposta do protocolo HTTP (200, 404, 500, 501, etc...)
     - requisições (requests) HTTP
     - respostas (responses) HTTP
@@ -87,7 +159,8 @@ Abra um editor de texto qualquer e crie um arquivo PHP que faça alguma coisa, n
     - domínio (para web)
     - URL
     - script
-3. Descubra quais são os servidores web disponível.
+3. Descubra quais são os servidores web disponível e anote qual é a  última versão. Você não vai querer instalar uma
+versão que não seja a mais atual, vai?
 
 
 ## Olha o que eu selecionei para vc

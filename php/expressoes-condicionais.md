@@ -8,14 +8,14 @@ ordem:       1
 
 As instruções condicionais alteram o fluxo de controle de seu programa.
 
-Elas dizem se devem ir para a "direita" ou para a "esquerda"
+Elas dizem para seu código ir para a "direita" ou para a "esquerda"
 
 A instrução condicional mais comum é o `if`.
 
     if (expressão-condicional) {
-        ... executar código
-        ... executar código
-        ... executar código
+        ... executar codigo
+        ... executar codigo
+        ... executar codigo
     }
 
 Logo após a palavra `if` temos a expressão condicional entre parênteses `if (expressão-condicional) {`
@@ -31,7 +31,7 @@ Quando temos um __if__ dentro do outro.
     if ($a) {
         if ($b) {
             if ($c) {
-                ... código
+                ... codigo
             }
         }
     }
@@ -39,7 +39,7 @@ Quando temos um __if__ dentro do outro.
 O código abaixo é equivalente:
 
     if ($a && $b && $c) {
-        ... código
+        ... codigo
     }
 
 
@@ -52,7 +52,7 @@ Os códigos abaixo são equivalentes
 <?php
 // true completo
 if ($variavel == true) {
-    ... executar código
+    ... executar codigo
 }
 ```
 
@@ -60,7 +60,7 @@ if ($variavel == true) {
 <?php
 // true simplificado
 if ($variavel) {
-    ... executar código
+    ... executar codigo
 }
 
 ```
@@ -75,15 +75,15 @@ Da mesma forma, os código abaixo também são equivalentes
 <?php
 // false completo
 if ($variavel == false) {
-    ... executar código
+    ... executar codigo
 }
 ```
 
 ```php
 <?php
 // false simplificado
-if ( ! $variavel) {
-    ... executar código
+if ( !$variavel ) {
+    ... executar codigo
 }
 ```
 
@@ -102,14 +102,14 @@ No exemplo abaixo, se o __if__ for falso e o __else__ verdadeiro então o bloco 
 
 ```php
 <?php
-if (expressão-condicional) {
-    ... executar código
-    ... executar código
-    ... executar código
-} else if (expressão-condicional) {
-    ... executar código
-    ... executar código
-    ... executar código
+if (expressao-condicional) {
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
+} else if (expressao-condicional) {
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
 }
 ```
 
@@ -117,15 +117,15 @@ Abaixo vemos o código equivalente:
 
 ```php
 <?php
-if (expressão-condicional) {
-    ... executar código
-    ... executar código
-    ... executar código
+if (expressao-condicional) {
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
 } else {
-    if (expressão-condicional) {
-        ... executar código
-        ... executar código
-        ... executar código
+    if (expressao-condicional) {
+        ... executar codigo
+        ... executar codigo
+        ... executar codigo
     }
 }
 ```
@@ -139,18 +139,18 @@ Uma outra variação seria incluir um terceiro bloco __else__.
 
 ```php
 <?php
-if (expressão-condicional) {
-    ... executar código
-    ... executar código
-    ... executar código
-} else if (expressão-condicional) {
-    ... executar código
-    ... executar código
-    ... executar código
+if (expressao-condicional) {
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
+} else if (expressao-condicional) {
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
 } else
-    ... executar código
-    ... executar código
-    ... executar código
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
 }
 ```
 

@@ -20,14 +20,100 @@ $num2 = 50;
 echo $num1 + $num2;
 ```
 
+## Examinando o valor de uma variável
 
-## Escopo de variáveis
+Para ver o que uma variável contém podemos utilizar a função `print_r()`.
 
-https://secure.php.net/manual/pt_BR/language.variables.scope.php
+```php
+<?php
+print_r($minha_variavel);
+```
+
+Mas você irá notar que ainda não está legível como você gostaria, então tente incluir umas tags HTML:
+
+```php
+<?php
+echo "<pre>";
+print_r($minha_variavel);
+echo "</pre>";
+```
+
+Aí sim você verá o resultado bem formatado. Mas tudo isso de linha só para exibir o valor de uma variável ?
+Você pode utilizar uma função, por exemplo:
+
+```php
+<?php
+function my_print_r($minha_variavel) {
+    echo "<pre>";
+    print_r($minha_variavel);
+    echo "</pre>";
+}
+```
+
+... ou utilizar o `var_dump()`. Háaaaa, então porque você não me apresentou logo esse cara ? É porque o `print_r()` é uma
+função interna, ela acompanha o PHP. O `var_dump()` também é uma função interna, mas para ele funcionar (adequadamente) 
+você precisará ter a extensão [x-debug]() devidamente instalado.
+
+```php
+<?php
+var_dump($minha_variavel);
+```
+
+- var_dump: exibe tipo e valor, precisa ter o `x-debug instalado
+- print_r: exibe valor, fica melhor com a tag `<pre>`
+
+Talvez você queira dar uma olha neste artigo [Debugando código em PHP ](/php/debugando-codigo/)
 
 
+## Funções
 
-## Operadores
+```php
+<?php
+function somar_dois_numeros($param1, $param2) {
+    return $param1 + $param2;
+}
+
+echo somar_dois_numeros(5, 3);
+```
+
+
+## Operadores Aritiméticos
+
+```php
+<?php
+$a + $b; 	# Adição         : Soma de $a e $b.
+$a - $b; 	# Subtração      : Diferença entre $a e $b.
+$a * $b; 	# Multiplicação  : Produto de $a e $b.
+$a / $b; 	# Divisão        : Quociente de $a e $b.
+$a % $b; 	# Módulo         : Resto de $a dividido por $b.
+$a ** $b; 	# Exponencial    : Resultado de $a elevado a $b.
+```
+
+Estes operadores funcionam exatamente como o da aritmética básica da escola.
+
+Talvez você queira ver a precedẽncia dos operadores [php.net/Precedência de Operadores](http://php.net/manual/pt_BR/language.operators.precedence.php)
+
+
+## Operadores de Incremento/Decremento
+
+```php
+<?php
+++$a; 	# Pré-incremento - Incrementa $a em um, e então retorna $a.
+$a++; 	# Pós-incremento - Retorna $a, e então incrementa $a em um.
+--$a; 	# Pré-decremento - Decrementa $a em um, e então retorna $a.
+$a--; 	# Pós-decremento - Retorna $a, e então decrementa $a em um.
+```
+
+
+## Operadores Lógicos
+
+```php
+<?php
+($a && $b);   # verdadeiro se $a e $b forem verdadeiros.
+($a || $b);    # verdadeiro se $a ou $b forem verdadeiros.
+($a xor $b);   # verdadeiro se $a ou $b forem verdadeiros, mas se ambos forem verdadeiro, então é falso.
+```
+
 
 http://php.net/manual/pt_BR/language.operators.php
 
@@ -92,7 +178,51 @@ Abaixo vemos um alternativa simplificada.
 #
 ```
 
+
+
 ## Estruturas de controle
+
+Bloco if-else.
+
+```php
+<?php
+if (expressao-condicional) {
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
+} else {
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
+}
+```
+
+Bloco if-elseif-else
+
+```php
+<?php
+if (expressao-condicional) {
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
+} else if (expressao-condicional) {
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
+} else
+    ... executar codigo
+    ... executar codigo
+    ... executar codigo
+}
+```
+
+Operador ternário
+
+```php
+<?php
+$resultado = (expressao-condicional) ? "caso-true" : " caso-false" ;
+```
+
 
 ## Laços de repetição
 
@@ -123,10 +253,10 @@ Array é uma estrutura que relaciona valores e chaves, é uma lista de valores a
 
 ```php
 <?php
-# antigamente
+# Como se criava array antigamente
 $arr = array("primeiro", "segundo", "terceiro");
 
-# Atualmente
+# Como se cria um array atualmente
 $arr = ["primeiro", "segundo", "terceiro"];
 ```
 

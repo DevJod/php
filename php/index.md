@@ -38,16 +38,7 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">design pattern 3</a>
 </div>
 
-## Capítulo 4 - Domando a fera
-
-<div class="list-group">
-    <a href="/php/foo/" class="list-group-item">PSR-0</a>
-    <a href="/php/foo/" class="list-group-item">PSR-1</a>
-    <a href="/php/foo/" class="list-group-item">PSR-2</a>
-    <a href="/php/foo/" class="list-group-item">PSR-3</a>
-</div>
-
-## Capítulo 5 - O mínimo sobre o protocolo HTTP
+## Capítulo 4 - O mínimo sobre o protocolo HTTP
 
 <div class="list-group">
     <a href="/php/como-funcionam-os-metodos-get-e-post/" class="list-group-item">Como funcionam os métodos GET e POST</a>
@@ -55,7 +46,7 @@ description: Aprenda PHP de verdade!
     <a href="/php/recebendo-dados-via-get-post/" class="list-group-item">Recebendo dados via GET e POST</a>
 </div>
 
-## Capítulo 6 - Lidando com formulários
+## Capítulo 5 - Lidando com formulários
 
 <div class="list-group">
     <a href="/php/manipulando-os-controles-text-password-e-textarea/" class="list-group-item">Manipulando os controles text, password e textarea</a>
@@ -66,7 +57,7 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">Fazendo upload de arquivos</a>
 </div>
 
-## Capítulo 7 - Interagindo com Banco de Dados
+## Capítulo 6 - Interagindo com Banco de Dados
 
 <div class="list-group">
     <a href="/php/foo/" class="list-group-item">DB</a>
@@ -76,7 +67,7 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">ORMs</a>
 </div>
 
-## Capítulo 8 - Twig - template engine
+## Capítulo 7 - Twig - template engine
 
 <div class="list-group">
     <a href="/php/foo/" class="list-group-item">Twig</a>
@@ -84,7 +75,7 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">Twig</a>
 </div>
 
-## Capítulo 9 - Slim a micro framework for PHP
+## Capítulo 8 - Slim a micro framework for PHP
 
 <div class="list-group">
     <a href="/php/hello-world-com-slimframework/" class="list-group-item">Hello World com slimframework</a>
@@ -92,12 +83,20 @@ description: Aprenda PHP de verdade!
     <a href="/php/foo/" class="list-group-item">Slim</a>
 </div>
 
-## Capítulo 10 - Expressões Regulares
+## Capítulo 9 - Expressões Regulares
 
 <div class="list-group">
     <a href="/php/o-basico-sobre-a-função-preg-match/" class="list-group-item">O básico sobre a função preg match</a>
     <a href="/php/o-basico-sobre-a-funcao-preg-match-all/" class="list-group-item">O básico sobre a função preg match all</a>
     <a href="/php/o-basico-sobre-a-função-preg-match/" class="list-group-item">O básico sobre a função preg match</a>
+</div>
+
+## Capítulo 10 - Organizando seu projeto
+
+<div class="list-group">
+    <a href="/php/" class="list-group-item">Passo 1</a>
+    <a href="/php/" class="list-group-item">Passo 2</a>
+    <a href="/php/" class="list-group-item">Passo 3</a>
 </div>
 
 ## Sua vez

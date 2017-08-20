@@ -315,7 +315,7 @@ O PHP suporta oito tipos primitivos.
 
 ## Strings
 
-Uma string pode ser especificada com aspas duplas (o mais comum), aspas simples, com heredoc e nowdoc.
+Uma string pode ser especificada com aspas duplas e aspas simples.
 
 Aspas duplas: o conteúdo é interpretado.
  
@@ -323,6 +323,18 @@ Aspas duplas: o conteúdo é interpretado.
 <?php
 $nome = "Joana";
 echo "Seu nome é $nome"; // Seu nome é Joana
+```
+
+Você pode concatenar strings com o o ponto `.`
+
+```php
+<?php
+$nome = "Joana" . "Gabrielle";
+
+# ou 
+$nome      = "Joana";
+$sobrenome = "Gabrielle";
+echo $nome . $sobrenome;
 ```
 
 Aspas simples: o conteúdo NÂO é interpretado.
@@ -333,35 +345,10 @@ $nome = "Joana";
 echo 'Seu nome é $nome'; // Seu nome é $nome
 ```
 
-Heredoc
+Há outras duas formas: heredoc e nowdoc, talvez você queira ver a documentação sobre 
+[strings](http://php.net/manual/pt_BR/language.types.string.php).
 
-O identificador de fechamento precisa começar na primeira coluna da linha. Além disso, o identificador precisa seguir 
-as mesmas regras de nomeação que qualquer outro rótulo no PHP: deve conter somente caracteres alfanuméricos e 
-sublinhados, e precisa começar com um caractere não numérico ou sublinhado.
 
-```php
-<?php
-$str = <<<EOD
-Exemplo de uma string
-distribuída em várias linhas
-utilizando a sintaxe heredoc.
-EOD;
-```
-
-Nowdoc:
-
-Um nowdoc é especificado similarmente a um heredoc, mas nenhuma interpretação é feita dentro de um nowdoc
-
-```php
-<?php
-$str = <<<'EOD'
-Example of string
-spanning multiple lines
-using nowdoc syntax.
-EOD;
-```
-
-Talvez você queira ver a documentação sobre [strings](http://php.net/manual/pt_BR/language.types.string.php)
 
 ## Arrays
 

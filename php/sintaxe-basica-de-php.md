@@ -72,6 +72,12 @@ Talvez você queira dar uma olha neste artigo [Debugando código em PHP ](/php/d
 
 ## Funções
 
+Funções são uma seção nomeada de código, um pequeno (normalmente pequeno) trecho de código que pode ser chamado de diversos ponto do código.
+
+Quando o programador precisar executar um mesmo código (mesmo que ligeiramente diferente) várias vezes ele, então, poderá utilizar-se de funções.
+
+As funções introduzem o conceito de reusabilidade, ou seja, "escrever código para depois".
+
 ```php
 <?php
 function somar_dois_numeros($param1, $param2) {
@@ -80,6 +86,8 @@ function somar_dois_numeros($param1, $param2) {
 
 echo somar_dois_numeros(5, 3);
 ```
+
+Leia mais sobre [funções](/php/funcoes/).
 
 
 
@@ -267,22 +275,22 @@ while ($i > 5) {
 
 ## Requisição de arquivos
 
-Para incluir outros scripts em seu scritp atual você pode utilizar o `inclue` ou `require`.
+Para incluir outros scripts em seu scritp atual você pode utilizar o `include` ou `require`.
 
-O `include` inclue um arquivo sem se preocupar se o arquivo existe ou não.
+O `include` inclui um arquivo sem se preocupar se o arquivo existe ou não.
 
-O `require` inclue um arquivo e lançará um erro se ele não existir, por tanto, ele é requerido, exigido!
+O `require` inclui um arquivo e lançará um erro se ele não existir, por tanto, ele é requerido, exigido!
 
 O complemento `_once` significa que o script deve ser inserido uma única vez, ou seja, se você chamar um script que 
 chama outros scripts, e estes, por sua vez, chamam a si mesmo, então você receberá um erro. Um errro por que o script
-foi inserido duas vezes ? Não, mas imagine que temos uma função chamda `foo()`, quando o mesmo script for chamado pela
-segunda vez, ele reclamará que não poder redefinir `foo()`.
+foi inserido duas vezes ? Não, mas imagine que temos uma função chamada `foo()`, quando o mesmo script for chamado pela
+segunda vez, ele reclamará que não pode redefinir `foo()`.
 
 
 ```php
 <?php
-include "arquivo.php";       # inclue o arquivo
-include_once "arquivo.php";  # inclue o arquivo uma única vez
+include "arquivo.php";       # inclui o arquivo
+include_once "arquivo.php";  # inclui o arquivo uma única vez
 require "arquivo.php";       # requer um arquivo
 require_once "arquivo.php";  # requer um arquivo uma única vez
 ```
@@ -292,6 +300,10 @@ Tanto `include` como `require` são funções, alguns desenvolvedores preferem a
 <?php
 require('arquivo.php');
 ```
+
+Sim, mas e agora qual eu devo usar ?
+
+Use o `require_once`, ele é o mais restritivo e o mais utilizado também.
 
 
 ## Tipos

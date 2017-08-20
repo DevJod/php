@@ -27,7 +27,7 @@ description: Aprenda PHP de verdade!
     <a href="https://secure.php.net/manual/pt_BR/language.variables.superglobals.php" class="list-group-item">Superglobais</a>
 </div>
 
-## Capítulo 3 - O básico sobre Programação Orientada a Objeto
+## Capítulo 3 - Programação Orientada a Objeto + TDD
 
 <div class="list-group">
     <a href="/php/foo/" class="list-group-item">oop</a>

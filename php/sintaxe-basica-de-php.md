@@ -1,14 +1,16 @@
 ---
 title:       Sintaxe básica de PHP
-description: 
+description:
 capitulo:    "começando"
 ordem:       5
 ---
 
+
+
 ## Variáveis
 
-As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável, os nomes de variável são 
-case-sensitive. 
+As variáveis no PHP são representadas por um cifrão ($) seguido pelo nome da variável, os nomes de variável são
+case-sensitive.
 
 ```php
 <?php
@@ -19,6 +21,8 @@ $num1 = 50;
 $num2 = 50;
 echo $num1 + $num2;
 ```
+
+
 
 ## Examinando o valor de uma variável
 
@@ -51,7 +55,7 @@ function my_print_r($minha_variavel) {
 ```
 
 ... ou utilizar o `var_dump()`. Háaaaa, então porque você não me apresentou logo esse cara ? É porque o `print_r()` é uma
-função interna, ela acompanha o PHP. O `var_dump()` também é uma função interna, mas para ele funcionar (adequadamente) 
+função interna, ela acompanha o PHP. O `var_dump()` também é uma função interna, mas para ele funcionar (adequadamente)
 você precisará ter a extensão [x-debug]() devidamente instalado.
 
 ```php
@@ -65,6 +69,7 @@ var_dump($minha_variavel);
 Talvez você queira dar uma olha neste artigo [Debugando código em PHP ](/php/debugando-codigo/)
 
 
+
 ## Funções
 
 ```php
@@ -75,6 +80,7 @@ function somar_dois_numeros($param1, $param2) {
 
 echo somar_dois_numeros(5, 3);
 ```
+
 
 
 ## Operadores Aritiméticos
@@ -91,31 +97,30 @@ $a ** $b; 	# Exponencial    : Resultado de $a elevado a $b.
 
 Estes operadores funcionam exatamente como o da aritmética básica da escola.
 
-Talvez você queira ver a precedẽncia dos operadores [php.net/Precedência de Operadores](http://php.net/manual/pt_BR/language.operators.precedence.php)
+Talvez você queira ver a precedência dos operadores [php.net/Precedência de Operadores](http://php.net/manual/pt_BR/language.operators.precedence.php)
+
 
 
 ## Operadores de Incremento/Decremento
 
 ```php
 <?php
-++$a; 	# Pré-incremento - Incrementa $a em um, e então retorna $a.
-$a++; 	# Pós-incremento - Retorna $a, e então incrementa $a em um.
---$a; 	# Pré-decremento - Decrementa $a em um, e então retorna $a.
-$a--; 	# Pós-decremento - Retorna $a, e então decrementa $a em um.
+++$a; # Pré-incremento - Incrementa $a em um, e então retorna $a.
+$a++; # Pós-incremento - Retorna $a, e então incrementa $a em um.
+--$a; # Pré-decremento - Decrementa $a em um, e então retorna $a.
+$a--; # Pós-decremento - Retorna $a, e então decrementa $a em um.
 ```
+
 
 
 ## Operadores Lógicos
 
 ```php
 <?php
-($a && $b);   # verdadeiro se $a e $b forem verdadeiros.
-($a || $b);    # verdadeiro se $a ou $b forem verdadeiros.
-($a xor $b);   # verdadeiro se $a ou $b forem verdadeiros, mas se ambos forem verdadeiro, então é falso.
+($a && $b);  # verdadeiro se $a e $b forem verdadeiros.
+($a || $b);  # verdadeiro se $a ou $b forem verdadeiros.
+($a xor $b); # verdadeiro se $a ou $b forem verdadeiros, mas se ambos forem verdadeiro, então é falso.
 ```
-
-
-http://php.net/manual/pt_BR/language.operators.php
 
 
 
@@ -155,7 +160,7 @@ comentários
 */
 ```
 
-Este é um exemplo de comentários do tipo dock block, alguns editores ajudam a criar esse bloco, você digita `/**`, 
+Este é um exemplo de comentários do tipo dock block, alguns editores ajudam a criar esse bloco, você digita `/**`,
 preciona a tecla enter e o editor completa a estrutra desse comentário.
 
 ```php
@@ -174,7 +179,7 @@ Abaixo vemos um alternativa simplificada.
 ```php
 <?php
 #
-# alternativa 
+# alternativa
 #
 ```
 
@@ -224,9 +229,69 @@ $resultado = (expressao-condicional) ? "caso-true" : " caso-false" ;
 ```
 
 
+
 ## Laços de repetição
 
+Laço `foreach()`:
+
+```php
+<?php
+foreach(['primeiro', 'segundo', 'terceiro'] as $value) {
+    echo $value;
+}
+// Exibe... 'primeiro', 'segundo' e 'terceiro'
+```
+
+Laço `for()`:
+
+```php
+<?php
+for($i = 0; $i < 5, $i++){
+    echo $i;
+}
+// exibe 0, 1, 2, 3, e 4
+```
+
+Laço `while()`:
+
+```php
+<?php
+$i = 0;
+while ($i > 5) {
+    echo $i;
+    $i++;
+}
+// exibe 0, 1, 2, 3, e 4
+```
+
+
 ## Requisição de arquivos
+
+Para incluir outros scripts em seu scritp atual você pode utilizar o `inclue` ou `require`.
+
+O `include` inclue um arquivo sem se preocupar se o arquivo existe ou não.
+
+O `require` inclue um arquivo e lançará um erro se ele não existir, por tanto, ele é requerido, exigido!
+
+O complemento `_once` significa que o script deve ser inserido uma única vez, ou seja, se você chamar um script que 
+chama outros scripts, e estes, por sua vez, chamam a si mesmo, então você receberá um erro. Um errro por que o script
+foi inserido duas vezes ? Não, mas imagine que temos uma função chamda `foo()`, quando o mesmo script for chamado pela
+segunda vez, ele reclamará que não poder redefinir `foo()`.
+
+
+```php
+<?php
+include "arquivo.php";       # inclue o arquivo
+include_once "arquivo.php";  # inclue o arquivo uma única vez
+require "arquivo.php";       # requer um arquivo
+require_once "arquivo.php";  # requer um arquivo uma única vez
+```
+Tanto `include` como `require` são funções, alguns desenvolvedores preferem a forma de função, veja:
+
+```php
+<?php
+require('arquivo.php');
+```
 
 
 ## Tipos
@@ -246,6 +311,57 @@ O PHP suporta oito tipos primitivos.
     + resource
     + NULL
 
+
+
+## Strings
+
+Uma string pode ser especificada com aspas duplas (o mais comum), aspas simples, com heredoc e nowdoc.
+
+Aspas duplas: o conteúdo é interpretado.
+ 
+```php
+<?php
+$nome = "Joana";
+echo "Seu nome é $nome"; // Seu nome é Joana
+```
+
+Aspas simples: o conteúdo NÂO é interpretado.
+ 
+```php
+<?php
+$nome = "Joana";
+echo 'Seu nome é $nome'; // Seu nome é $nome
+```
+
+Heredoc
+
+O identificador de fechamento precisa começar na primeira coluna da linha. Além disso, o identificador precisa seguir 
+as mesmas regras de nomeação que qualquer outro rótulo no PHP: deve conter somente caracteres alfanuméricos e 
+sublinhados, e precisa começar com um caractere não numérico ou sublinhado.
+
+```php
+<?php
+$str = <<<EOD
+Exemplo de uma string
+distribuída em várias linhas
+utilizando a sintaxe heredoc.
+EOD;
+```
+
+Nowdoc:
+
+Um nowdoc é especificado similarmente a um heredoc, mas nenhuma interpretação é feita dentro de um nowdoc
+
+```php
+<?php
+$str = <<<'EOD'
+Example of string
+spanning multiple lines
+using nowdoc syntax.
+EOD;
+```
+
+Talvez você queira ver a documentação sobre [strings](http://php.net/manual/pt_BR/language.types.string.php)
 
 ## Arrays
 

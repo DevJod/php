@@ -15,18 +15,18 @@ case-sensitive.
 ```php
 <?php
 $nome  = "Joana Gabrielle";
-$idade = 6;
+$idade = 5;
 
-$num1 = 50;
-$num2 = 50;
-echo $num1 + $num2;
+echo $nome;       # Joana Gabrielle
+echo "\n";        # '\n' é uma quebra de linha
+echo $idade + 1;  # 6
 ```
 
 
 
 ## Examinando o valor de uma variável
 
-Para ver o que uma variável contém podemos utilizar a função `print_r()`.
+Para examinarmos o conteúdo de uma variável podemos utilizar a função `print_r()`.
 
 ```php
 <?php
@@ -74,7 +74,7 @@ Talvez você queira dar uma olha neste artigo [Debugando código em PHP ](/php/d
 
 Funções são uma seção nomeada de código, um pequeno (normalmente pequeno) trecho de código que pode ser chamado de diversos ponto do código.
 
-Quando o programador precisar executar um mesmo código (mesmo que ligeiramente diferente) várias vezes ele, então, poderá utilizar-se de funções.
+Quando o programador precisar executar um mesmo código várias vezes, ele poderá utilizar-se de funções.
 
 As funções introduzem o conceito de reusabilidade, ou seja, "escrever código para depois".
 
@@ -95,12 +95,12 @@ Leia mais sobre [funções](/php/funcoes/).
 
 ```php
 <?php
-$a + $b; 	# Adição         : Soma de $a e $b.
-$a - $b; 	# Subtração      : Diferença entre $a e $b.
-$a * $b; 	# Multiplicação  : Produto de $a e $b.
-$a / $b; 	# Divisão        : Quociente de $a e $b.
-$a % $b; 	# Módulo         : Resto de $a dividido por $b.
-$a ** $b; 	# Exponencial    : Resultado de $a elevado a $b.
+$a + $b;    # Adição         : Soma de $a e $b.
+$a - $b;    # Subtração      : Diferença entre $a e $b.
+$a * $b;    # Multiplicação  : Produto de $a e $b.
+$a / $b;    # Divisão        : Quociente de $a e $b.
+$a % $b;    # Módulo         : Resto de $a dividido por $b.
+$a ** $b;   # Exponencial    : Resultado de $a elevado a $b.
 ```
 
 Estes operadores funcionam exatamente como o da aritmética básica da escola.
@@ -113,10 +113,10 @@ Talvez você queira ver a precedência dos operadores [php.net/Precedência de O
 
 ```php
 <?php
-++$a; # Pré-incremento - Incrementa $a em um, e então retorna $a.
-$a++; # Pós-incremento - Retorna $a, e então incrementa $a em um.
---$a; # Pré-decremento - Decrementa $a em um, e então retorna $a.
-$a--; # Pós-decremento - Retorna $a, e então decrementa $a em um.
+++$a;       # Pré-incremento - Incrementa $a em um, e então retorna $a.
+$a++;       # Pós-incremento - Retorna $a, e então incrementa $a em um.
+--$a;       # Pré-decremento - Decrementa $a em um, e então retorna $a.
+$a--;       # Pós-decremento - Retorna $a, e então decrementa $a em um.
 ```
 
 
@@ -169,7 +169,7 @@ comentários
 ```
 
 Este é um exemplo de comentários do tipo dock block, alguns editores ajudam a criar esse bloco, você digita `/**`,
-preciona a tecla enter e o editor completa a estrutra desse comentário.
+preciona a tecla "Enter" e o editor completa a estrutra desse comentário.
 
 ```php
 <?php
@@ -329,32 +329,33 @@ O PHP suporta oito tipos primitivos.
 
 Uma string pode ser especificada com aspas duplas e aspas simples.
 
-Aspas duplas: o conteúdo é interpretado.
+- Aspas duplas: o conteúdo é interpretado.
+- Aspas simples: o conteúdo NÂO é interpretado.
+
  
 ```php
 <?php
 $nome = "Joana";
+
+# aspas duplas
 echo "Seu nome é $nome"; // Seu nome é Joana
+
+# aspas simples
+echo 'Seu nome é $nome'; // Seu nome é $nome
+
 ```
 
-Você pode concatenar strings com o o ponto `.`
+Você pode concatenar strings com o ponto `.`
 
 ```php
 <?php
-$nome = "Joana" . "Gabrielle";
+# exemplo 1
+echo "Joana" . "Gabrielle"; // Joana Gabrielle
 
-# ou 
+# exemplo 2
 $nome      = "Joana";
 $sobrenome = "Gabrielle";
-echo $nome . $sobrenome;
-```
-
-Aspas simples: o conteúdo NÂO é interpretado.
- 
-```php
-<?php
-$nome = "Joana";
-echo 'Seu nome é $nome'; // Seu nome é $nome
+echo $nome . $sobrenome;    // Joana Gabrielle
 ```
 
 Há outras duas formas: heredoc e nowdoc, talvez você queira ver a documentação sobre 
@@ -422,20 +423,36 @@ Leia mais sobre [arrays](/php/criando-e-iterando-um-array-em-php/).
 
 ## Objetos
 
+Para instanciar um objeto em PHP você deve utilizar a palavra `new` seguida do nome do objeto.
+
+É uma convenção (ou talvez uma boa prática) que o nome da classe começe com maiúsculo.
+
+Podemos acessar as propriedades e métodos através do símbolo `->` (é parece uma seta, eu sei).
+
 ```php
 <?php
+# arquivo index.php
+
 require "Triangulo.php";
 
-$triangulo = new Triangulo();               # instanciamos
-$triangulo->a = 3;                          # atribuímos valor
-$triangulo->b = 4;                          # idem
-$triangulo->c = 5;                          # idem
-var_dump(  $triangulo->validarForma()  );   # executamos um método
+$objeto = new Triangulo();               # instanciamos
+$objeto->a = 3;                          # atribuímos valor
+$objeto->b = 4;                          # idem
+$objeto->c = 5;                          # idem
+var_dump(  $objeto->validarForma()  );   # executamos um método
 ```
 
+A definição de uma classe começa com a palavra chave `class`, seguida do nome da classe e de um par de colchetes `{}`.
+
+Uma classe pode conter suas próprias constantes, variáveis (chamadas de "propriedades") e funções (chamadas de "métodos"). 
+
+A pseudo-variável `$this` está disponível quando um método é chamado a partir de um contexto de objeto, `$this` é uma 
+referência ao objeto chamado.
 
 ```php
 <?php
+# arquivo Triangulo.php
+
 class Triangulo {
 
     # suas propriedades
@@ -445,14 +462,105 @@ class Triangulo {
 
     # seus métodos
     public function validarForma() {
-        echo $this->a;
-        echo $this->b;
-        echo $this->c;
+        if ($this->a < ($this->b + $this->c)) {
+            if ($this->b < ($this->a + $this->c)) {
+                if ($this->c < ($this->a + $this->b)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
 ```
 
-Leia mais sobre [objetos](/php/programacao-orientada-a-objetos/).
+Leia mais sobre [objetos](/php/programacao-orientada-a-objetos
 
 
+
+## Testes Unitários (ou teste de unidades)
+
+Testes unitários ou testes de unidades (para os mais puristas) são testes que escrevemos para que sejam realizados de 
+uma forma automática. Haaaa! Como eu queria ter sido apresentado para os testes de unidades logo no começo de minha formação, 
+devia ser uma matéria obrigatória em todo curso de tecnologia. Por isso eu já vou apresentando ele a você logo aqui na 
+"sintaxe básica".
+
+Eu sei que você, ao bater seus olhos sobre o trecho da função `validarForma()` (acima apresentada), pensou imediatamente
+"que porr... é essa???" não, é brincadeira! Você pensou "como será que se valida a forma de um triângulo ?", ou ainda, 
+"se eu passar tal valor para essas variáveis, o que será que a função devolve?", ou melhor, "será que essa função funciona ?".
+
+As perguntas abaixo são elencadas em sua mente sempre que você se depara com um código estranho, desconhecido, feito
+por terceiros, tipo assim alienigina (você sabe que os extraterrestres já estão entre a gente né? rssss).
+
+- o que esse código faz ? 
+- como ele funciona ? 
+- qual é a sua entrada ? 
+- qual é a sua saída ? 
+- ele está funcionando ?
+- acabei de alterá-lo, será que continua funcionando ?
+
+Se existir um teste escrito, basta executar e você obterá sua resposta.
+
+Escrevemos testes através das asserções, ou melhor, de um "assert function". 
+
+Devemos comparar o valor __esperado__ com o valor __atual__.
+
+```php
+<?php
+
+#
+# código
+#
+function somar($a, $b) {
+    return $a + $b;
+}
+
+#
+# um projeto inacabado de assert function
+#
+$expected = 10
+$actual   = somar(8, 2);
+if ($expected == $actual) {
+    echo "green flag, seu teste passou!";
+} else {
+    echo "red flag, seu teste não pasou!";
+}
+```
+
+Um exemplo real de asserção é `assertEquals($expected, $actual)` que irá testar se duas variáveis são iguais ou não. Ela
+aceita dois valores (parâmetros) que devem ser iguais. Se não forem iguais, ou seja, se o teste falhar, então veremos
+um alerta de bandeira vermelha.
+
+Para utilizar essa função você precisará de um framework de testes instaldo, além disso, teremos que ter uma certa 
+intimidade com o que chamamos de terminal, pois executamos os teste no terminal. Abaixo segue um exemplo escrito para
+o frameork PHPUnit.
+
+
+```php
+<?php
+# arquivo TrianguloTest.php
+
+require "Triangulo.php";
+
+class TrianguloTest extends \PHPUnit\Framework\TestCase {
+
+    public function testValidarForma() {
+        $objeto = new Triangulo();
+        $objeto->a = 3;
+        $objeto->b = 4;
+        $objeto->c = 5;
+        
+        $this->assertEquals(1, $objeto->validarForma());
+    }
+
+}
+```
+
+Para executar o teste acima, no terminal digitamos:
+
+    phpunit TrianguloTest.php
+
+E veremos a seguinte informação
+
+![](teste.png)
 

@@ -12,8 +12,7 @@ ordem:       3
 Funções são uma seção nomeada de código, um pequeno (normalmente pequeno) trecho de código que pode ser chamado de
 diversos ponto do código.
 
-Quando o programador precisar executar um mesmo código (mesmo que ligeiramente diferente) várias vezes ele, então, 
-poderá utilizar-se de funções.
+Quando o programador precisar executar um mesmo código várias vezes, ele poderá utilizar-se de funções.
 
 As funções introduzem o conceito de reusabilidade, ou seja, "escrever código para depois".
 

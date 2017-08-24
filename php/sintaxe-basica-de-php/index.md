@@ -281,7 +281,7 @@ O `include` inclui um arquivo sem se preocupar se o arquivo existe ou não.
 
 O `require` inclui um arquivo e lançará um erro se ele não existir, por tanto, ele é requerido, exigido!
 
-O complemento `_once` significa que o script deve ser inserido uma única vez, ou seja, se você chamar um script que 
+O complemento `_once` significa que o script deve ser inserido uma única vez, ou seja, se você chamar um script que
 chama outros scripts, e estes, por sua vez, chamam a si mesmo, então você receberá um erro. Um errro por que o script
 foi inserido duas vezes ? Não, mas imagine que temos uma função chamada `foo()`, quando o mesmo script for chamado pela
 segunda vez, ele reclamará que não pode redefinir `foo()`.
@@ -332,7 +332,7 @@ Uma string pode ser especificada com aspas duplas e aspas simples.
 - Aspas duplas: o conteúdo é interpretado.
 - Aspas simples: o conteúdo NÂO é interpretado.
 
- 
+
 ```php
 <?php
 $nome = "Joana";
@@ -358,7 +358,7 @@ $sobrenome = "Gabrielle";
 echo $nome . $sobrenome;    // Joana Gabrielle
 ```
 
-Há outras duas formas: heredoc e nowdoc, talvez você queira ver a documentação sobre 
+Há outras duas formas: heredoc e nowdoc, talvez você queira ver a documentação sobre
 [strings](http://php.net/manual/pt_BR/language.types.string.php).
 
 
@@ -444,9 +444,9 @@ var_dump(  $objeto->validarForma()  );   # executamos um método
 
 A definição de uma classe começa com a palavra chave `class`, seguida do nome da classe e de um par de colchetes `{}`.
 
-Uma classe pode conter suas próprias constantes, variáveis (chamadas de "propriedades") e funções (chamadas de "métodos"). 
+Uma classe pode conter suas próprias constantes, variáveis (chamadas de "propriedades") e funções (chamadas de "métodos").
 
-A pseudo-variável `$this` está disponível quando um método é chamado a partir de um contexto de objeto, `$this` é uma 
+A pseudo-variável `$this` está disponível quando um método é chamado a partir de um contexto de objeto, `$this` é uma
 referência ao objeto chamado.
 
 ```php
@@ -480,28 +480,27 @@ Leia mais sobre [objetos](/php/programacao-orientada-a-objetos
 
 ## Testes Unitários (ou teste de unidades)
 
-Testes unitários ou testes de unidades (para os mais puristas) são testes que escrevemos para que sejam realizados de 
-uma forma automática. Haaaa! Como eu queria ter sido apresentado para os testes de unidades logo no começo de minha formação, 
-devia ser uma matéria obrigatória em todo curso de tecnologia. Por isso eu já vou apresentando ele a você logo aqui na 
-"sintaxe básica".
+Testes unitários ou testes de unidades (para os mais puristas) são testes que escrevemos para que sejam realizados de
+uma forma automática. Haaaa! Como eu queria ter sido apresentado à eles logo no começo de minha formação,devia ser uma
+matéria obrigatória em todo curso de tecnologia. Por isso eu já vou apresentando ele a você logo aqui na "sintaxe básica".
 
 Eu sei que você, ao bater seus olhos sobre o trecho da função `validarForma()` (acima apresentada), pensou imediatamente
-"que porr... é essa???" não, é brincadeira! Você pensou "como será que se valida a forma de um triângulo ?", ou ainda, 
+"que porr... é essa???" não, é brincadeira! Você pensou "como será que se valida a forma de um triângulo ?", ou ainda,
 "se eu passar tal valor para essas variáveis, o que será que a função devolve?", ou melhor, "será que essa função funciona ?".
 
 As perguntas abaixo são elencadas em sua mente sempre que você se depara com um código estranho, desconhecido, feito
 por terceiros, tipo assim alienigina (você sabe que os extraterrestres já estão entre a gente né? rssss).
 
-- o que esse código faz ? 
-- como ele funciona ? 
-- qual é a sua entrada ? 
-- qual é a sua saída ? 
+- o que esse código faz ?
+- como ele funciona ?
+- qual é a sua entrada ?
+- qual é a sua saída ?
 - ele está funcionando ?
 - acabei de alterá-lo, será que continua funcionando ?
 
 Se existir um teste escrito, basta executar e você obterá sua resposta.
 
-Escrevemos testes através das asserções, ou melhor, de um "assert function". 
+Escrevemos testes através das asserções, ou melhor, de um "assert function".
 
 Devemos comparar o valor __esperado__ com o valor __atual__.
 
@@ -531,7 +530,7 @@ Um exemplo real de asserção é `assertEquals($expected, $actual)` que irá tes
 aceita dois valores (parâmetros) que devem ser iguais. Se não forem iguais, ou seja, se o teste falhar, então veremos
 um alerta de bandeira vermelha.
 
-Para utilizar essa função você precisará de um framework de testes instaldo, além disso, teremos que ter uma certa 
+Para utilizar essa função você precisará de um framework de testes instaldo, além disso, teremos que ter uma certa
 intimidade com o que chamamos de terminal, pois executamos os teste no terminal. Abaixo segue um exemplo escrito para
 o frameork PHPUnit.
 
@@ -549,8 +548,8 @@ class TrianguloTest extends \PHPUnit\Framework\TestCase {
         $objeto->a = 3;
         $objeto->b = 4;
         $objeto->c = 5;
-        
-        $this->assertEquals(1, $objeto->validarForma());
+
+        $this->assertEquals(true, $objeto->validarForma());
     }
 
 }
@@ -560,7 +559,14 @@ Para executar o teste acima, no terminal digitamos:
 
     phpunit TrianguloTest.php
 
-E veremos a seguinte informação
+E veremos a seguinte informação:
 
 ![](teste.png)
 
+Acima você viu a bandeira verde, seu teste deu certo, está passando. Só para ilustrar a bandeira vermelha, que indica
+teste falhando e consequentemente código quebrado, eu simulei um erro `$this->assertEquals(false, $objeto->validarForma());`,
+veja abaixo como é exibido no terminal.
+
+![](teste-red.png)
+
+Falaremos mais sobre testes em breve, por enquanto é só para você não dizer que não foi apresentado a eles logo no começo.

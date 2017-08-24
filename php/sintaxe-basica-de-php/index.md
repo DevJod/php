@@ -323,6 +323,31 @@ O PHP suporta oito tipos primitivos.
     + resource
     + NULL
 
+O tipo __booleano__ aceita `true` ou ``false`, é case insensitive, ou seja, aceita `True`, ``TRUE` ou `true`, eu gosto de
+usar tudo minúsculo.
+
+O tipo __interge__ (inteiro) é um número do conjunto Z = {..., -2, -1, 0, 1, 2, ...}.
+
+O tipo __float__ trata-se de um número de ponto flutuante (também conhecidos como "doubles" ou "números reais"),
+podem ser especificados comforme exemplo abaixo.
+
+```php
+<?php
+$a = 1.234;
+```
+
+Um __resource__ (recurso) é uma variável especial, que mantém uma referência a um recurso externo, por exemplo: se
+você abrir uma conexão ftp  a sua variável conterá um recurso de ftp.
+
+O valor especial __NULL__ representa uma variável sem valor. `NULL` é o único valor possível do tipo null.
+
+A variável é considerada null se:
+
+1. foi atribuída a constante NULL.
+2. ainda não recebeu nenhum valor.
+3. foi apagada com unset().
+
+Os demais tipos eu vou deter um pouco mais de tempo...
 
 
 ## Strings
@@ -570,3 +595,10 @@ veja abaixo como é exibido no terminal.
 ![](teste-red.png)
 
 Falaremos mais sobre testes em breve, por enquanto é só para você não dizer que não foi apresentado a eles logo no começo.
+
+
+
+## Exercício
+
+Se você já está com o PHP instalado, escreva um script onde você possa 'brincar' e ver funcionar cada um dos conceitos
+aqui apresentados.

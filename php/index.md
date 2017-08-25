@@ -31,9 +31,9 @@ description: Aprenda PHP de verdade!
 
 <div class="list-group">
     <a href="/php/foo/" class="list-group-item">oop</a>
-    <a href="/php/foo/" class="list-group-item">oop</a>
-    <a href="/php/foo/" class="list-group-item">oop</a>
-    <a href="/php/foo/" class="list-group-item">design pattern 1</a>
+    <a href="/php/foo/" class="list-group-item">injeção de dependência</a>
+    <a href="/php/foo/" class="list-group-item">autoload - fig 01</a>
+    <a href="/php/foo/" class="list-group-item">front controller</a>
     <a href="/php/foo/" class="list-group-item">design pattern 2</a>
     <a href="/php/foo/" class="list-group-item">design pattern 3</a>
 </div>
@@ -60,11 +60,10 @@ description: Aprenda PHP de verdade!
 ## Capítulo 6 - Interagindo com Banco de Dados
 
 <div class="list-group">
-    <a href="/php/foo/" class="list-group-item">DB</a>
-    <a href="/php/foo/" class="list-group-item">PDO</a>
-    <a href="/php/foo/" class="list-group-item">PDO</a>
-    <a href="/php/foo/" class="list-group-item">PDO</a>
-    <a href="/php/foo/" class="list-group-item">ORMs</a>
+    <a href="/php/foo/" class="list-group-item">Drivers mysql, mysqli e PDO</a>
+    <a href="/php/foo/" class="list-group-item">Criando tabelas através de scripts</a>
+    <a href="/php/foo/" class="list-group-item">sql injection</a>
+    <a href="/php/foo/" class="list-group-item">ORMs - introdução</a>
 </div>
 
 ## Capítulo 7 - Twig - template engine
@@ -88,7 +87,7 @@ description: Aprenda PHP de verdade!
 <div class="list-group">
     <a href="/php/o-basico-sobre-a-função-preg-match/" class="list-group-item">O básico sobre a função preg match</a>
     <a href="/php/o-basico-sobre-a-funcao-preg-match-all/" class="list-group-item">O básico sobre a função preg match all</a>
-    <a href="/php/o-basico-sobre-a-função-preg-match/" class="list-group-item">O básico sobre a função preg match</a>
+    <a href="/php/referencia-da-funcao-preg-match-all/" class="list-group-item">Referência da função preg_match_all</a>
 </div>
 
 ## Capítulo 10 - Organizando seu projeto

@@ -499,7 +499,7 @@ class Triangulo {
 }
 ```
 
-Leia mais sobre [objetos](/php/programacao-orientada-a-objetos
+Leia mais sobre [objetos](/php/programacao-orientada-a-objetos)
 
 
 

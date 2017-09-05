@@ -1,50 +1,29 @@
 ---
 title:       Como funcionam os métodos GET e POST
-description: Introdução prática e descomplicada sobre o protocolo HTTP onde nosso objetivo é entender os métodos GET e POST.
+description: Nosso objetivo é entender os métodos GET e POST.
 capitulo:    "http"
 ordem:       1
 ---
 
+Esta não é um artigo formal, nem acadêmico, sobre o protocolo HTTP, se você precisa dessas informações para seu TCC ou
+qualquer outro trabalho escolar, sinto em desapontá-lo. Neste artigo eu quero passar para você uma forma bem prática de
+como os verbos GET e POST são regidos pelo protocolo HTTP.
 
 ## O protocolo HTTP
 
-O funcionamento do PHP depende do Apache e o apache depende do protocolo HTTP.
+Não dá para falar sobre os verbos POST e GET sem introduzir o protocolo HTTP, ou será que dá ? Acho que não, mas como fazer
+uma apresentação formal do protocolo não é o objetivo deste artigo (como já foi dito) eu vou deixar aqui uma "breve noção"
+do que vem a ser o HTTP.
 
-O protocolo HTTP é a roda que faz girar toda a internet, ele está na camada mais alta do modelo OSI (não confuda OSI com ISO).
+O Hypertext Transfer Protocol, é um protocolo de comunicação utilizado para sistemas de informação de hipermídia, distribuídos e colaborativos.
+Ele é definido pela especificação" [rfc2616](https://tools.ietf.org/html/rfc2616 "link-externo")
 
-O que é camada de rede? Espere aí, estamos fugindo do escopo deste artigo, mas é um assunto básico (para quem está 
-estudando redes de computadores), então fica a imagem só para estigá-lo(a).
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fhAXgcD21iE?rel=0" frameborder="0" allowfullscreen></iframe>
 
-![Figura do modelo OSI](camada-osi.jpg "Figura do modelo OSI")
+Se você assitiu ao vido acima vocçe percebeu que sempre caímos nas requisições (pedidos) e respostas. Elas são o objeto de estudo
+deste artigo.
 
-O HTTP trabalha com requisições (request) e respotas (response).
-
-Você conhece um software que faz requisições HTTP?
-
-Conhece sim! Esse navegador que está utilizando para ver está página é a resposta.
-
-A imagem abaixo ilustra o processo.
-
-![Primeiro diagrama modelo OSI](http-diagram.png "Primeiro diagrama modelo OSI")
-
-
-> Se você digita um endereço na barra de endereço seu navegador e aperta a tecla Enter o navegador faz uma requisição 
-> HTTP para o servidor do endereço digitado e o método dessa requisição é o GET.
-> 
-> Se você clicar em um link em um site, o navegador também se encarrega de fazer um requisição HTTP com o método GET, 
-> para buscar o conteúdo da página que você clicou.
-> 
-> <small>Fonte: http://www.comocriarsites.com/html/como-funciona-os-metodos-get-e-post-diferencas/</small>
-
-A imagem abaixo  ilustra o esquema com mais detalhes.
-
-![Segundo diagrama modelo OSI](http-diagram2.jpg "Segundo diagrama modelo OSI")
-
-Existem outros métodos além do GET e POST, veja o quadro abaixo.
-
-![outros métodos HTTP](metodos-http.png "Segundo diagrama modelo OSI")
-
-Eles servirão quando o assunto for sobre REST, por enquanto ficaremos apenas com GET e POST.
+![figura http](http-diagram.jpeg )
 
 
 
@@ -178,8 +157,8 @@ não vê os dados na URL não quer dizer que eles (os dados) estão protegidos.
 Se a questão é segurança, eu posso te dar uma certeza: tem muita ladainha na net. Mas se quiser um lugar para começar, 
 então veja a nossa seção sobre [segurança da informação](/seguranca-da-informacao/)
 
-Todo controle colocado dentro do formulário web com a propriedade `name` preenchida gera um par
-`nome=valor` para ser enviado no servidor.
+Todo controle colocado dentro do formulário web com a propriedade `name` preenchida gera um par `nome=valor` para ser 
+enviado no servidor.
 
 Na matéria seguinte veremos passo a passo como gerar as requisições, tanto em GET como em POST.
 

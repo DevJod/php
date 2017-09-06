@@ -1,7 +1,6 @@
 ---
 title:       Funcões
-description: "As funções introduzem o conceito de reusabilidade, ou seja, 'escrever código para depois'. Funções são uma seção nomeada de código, um pequeno (normalmente pequeno) trecho de código que pode ser chamado de
-diversos ponto do código"
+description: "As funções introduzem o conceito de reusabilidade, significa 'escrever código para depois'."
 capitulo:    "conhecendo-o-inimigo"
 ordem:       3
 ---
@@ -24,6 +23,9 @@ todo cuidado para evitarmos, principalmente:
 - Funções com muito parâmetros (considere OOP como alternativa).
 - Funções que sejam difícil de testar.
 
+Estabeleça isso como uma regra, toda vez que criar um função olha para ela e pergunte-se: ela está grande demais ?
+Ela é pouco generalista, ou seja, muito especializada e, por tanto, pouco reaproveitável ? Ela possui muitos parâmetros ?
+Você consegue escrever um teste fcacilmente para sua função?
 
 Eis a sintaxe básica de uma função que não retorna valor, mais conhecida como procedimento :
 
@@ -35,7 +37,8 @@ Eis a sintaxe básica de uma função que não retorna valor, mais conhecida com
         # código
     }
 
-O __return__ faz com que algum valor seja retornado e interrompe o funcionamento da função.
+O __return__ faz com que algum valor seja retornado e interrompe o funcionamento da função. Teoricamente, uma função
+sempre deve retornar algo.
 
     function foo() {
         # código
@@ -46,13 +49,14 @@ O __return__ faz com que algum valor seja retornado e interrompe o funcionamento
 
 Uma função pode aceitar parâmetros (dados para serem trabalhos dentro da função).
 
-
-Temos os parâmetros opcionais (ou não), os valores padrões e se os dados são passados por "valor" ou por "referência", por hora deixaremos esses assuntos para outra matéria.
-
 Abaixo conferimos um exemplo de função que soma dois números.
 
 ```php
 <?php
+
+#
+# uma função qualquer
+#
 function somarDoisNumeros($parametro1, $parametro2) {
     $soma = $parametro1 + $parametro2;
     return $soma;
@@ -60,6 +64,75 @@ function somarDoisNumeros($parametro1, $parametro2) {
 
 echo somarDoisNumeros(5, 3);
 // print 8
+
 echo somarDoisNumeros(2, 4);
 // print 6
 ```
+
+
+## Parâmetros opcionais (ou valores padrão?)
+
+
+Temos os parâmetros opcionais (ou não). Veja no exemplo abaixo que o terceiro parâmetro é opcional, ele pode ou não ser
+passado (enviado).
+
+```php
+<?php
+
+#
+# função com parâmetro opcional
+#
+function test($a, $b, $c = 0) {
+    echo "$a-$b-$c";
+}
+
+test(1, 2);
+test(1, 2, 3);
+```
+
+Você não precisa se preocupar com o terceiro parâmetro porque ele, além de ser opcional, também é o valor padrão, quero
+dizer que quando não passamos o um valor para `$c` o valor padrão (neste caso `0`) será utilizado.
+
+Dito de outra forma, o parametro não é opcional, opcional é o valor que você vai fornecer para a função, caso não 
+informar, sera considerado o valor padrão. Entendeu mano ?
+
+
+
+## Parâmetros por valor e por referência 
+
+Temos tabém os dados que são passados por "valor" ou por "referência".
+
+Abaixo um  exemplo de parâmetro passado por valor.
+
+```php
+<?php
+
+$meu_a = 456;
+
+#
+# por valor
+#
+function alterar($a) {
+    $a = 123;
+}
+
+echo $meu_a ; // o que será que ele exibirá aqui ?
+```
+
+Abaixo um  exemplo de parâmetro passado por referência.
+
+```php
+<?php
+
+$meu_a = 456;
+
+#
+# por referência
+#
+function alterar(&$a) {
+    $a = 123;
+}
+
+echo $meu_a ; // e agora, o que será que ele exibirá aqui ?
+```
+

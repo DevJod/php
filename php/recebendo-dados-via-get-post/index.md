@@ -13,7 +13,7 @@ Quando a requisição for GET usaremos `$_GET`.
 
 Quando a requisição for POST usaremos `$_POST`.
 
-Ambas são do tipo [array]().
+Ambas são do tipo [array](/php/criando-e-iterando-um-array-em-php/).
 
 Podemos ver o resultado  das variáveis da seguinte forma:
 
@@ -21,13 +21,15 @@ Podemos ver o resultado  das variáveis da seguinte forma:
 
 A requisição acontece com um grupo de pares `nome=valor`.
 
-Se a requisição fosse via POST teriamos:
+Se a requisição fosse via POST, teriamos:
 
     $_POST['nome'] = valor
 
 e se fosse via GET teríamos:
 
     $_GET['nome'] = valor
+
+Tudo igual, certo ? Certíssimo! A única mudança é na variável global, ou `$_GET` ou `$_POST`.
 
 
 Quando a key(chave) não existe
@@ -45,9 +47,11 @@ echo $_GET['foo'];
 
 !["PHP erro undefined index"](undefined-index.png "PHP erro undefined index")
 
-E aí, já sabe identificar o erro? O indice do array não foi definido (Undefined Index).
+E aí, já sabe identificar o erro? O indice do array não foi definido (Undefined Index). Quer dizer, estamos querendo 
+utilizar um índice de um array que ainda não foi definido (inicializado).
 
-Quer dizer, estamos querendo utilizar um índice de um array que ainda não foi definido (inicializado).
+Na verdade não é um erro e sim um `notice`. Em PHP temos erros fatais (error), notices e warnings. Mas isso é outro assunto.
+
 
 
 
@@ -56,24 +60,23 @@ Checando se o valor "chegou" ou não com isset()
 
 A função `isset()` nos diz se determinada variável foi inicializada ("setada").
 
-Traduzindo "is set" ao pé da letra (tradução tupiniquim) seria "está setado" ou melhor foi inicializado.
+Traduzindo "is set" ao pé da letra (tradução tupiniquim) seria "está setado" ou melhor "foi inicializado".
 
-A função testa variáveis e também chaves associativas de [arrays](), então podemos utilizá-la
+A função testa variáveis e também chaves associativas de [array](/php/criando-e-iterando-um-array-em-php/), então podemos utilizá-la
 da seguinte forma:
 
     if(isset($_POST['foo'])) {
         echo $_POST['foo'];
     }
 
-Prejuízos: uma linha de código virou 3 e ligeiramente menos legível.
+Prejuízos: uma linha de código virou 3 e, ligeiramente, menos legível.
 
 Um programador "espertinho" faria isso:
 
     if(isset($_POST['foo'])) { echo $_POST['foo']; }
 
-Voltamos a 1 única linha, mas a legibilidade "foi pro saco".
-
-
+Voltamos a 1 única linha, mas a acabamos com a legibilidade. Bom, será que com o operador ternário ficaria melhor ?
+Ou menos ruim?
 
 
 Incializando com operador ternário
@@ -87,8 +90,7 @@ Uma variável pode ser inicializada com o valor null, exemplo:
     echo $_POST['foo'];
 
 O código acima evitaria o erro `undefined index`, mas ele não faz sentido, ele sobrescreveria o valor passado na requisição.
-
-Mas de repente surge a seguinte idéia:
+Então, de repente, surge a seguinte idéia:
 
     if(isset($_POST['foo'])) {
         # retornar o valor da variável
@@ -106,9 +108,9 @@ Trocando as strings por código real temos:
 
     echo ( isset($_POST['foo']) ) ? $_POST['foo'] : null;
 
-Voltamos a uma única linha, mas se tivermos 2 pontos ou mais teremos que repetir esse trambolhão aí.
+Voltamos a uma única linha, mas se tivermos 2 pontos ou mais teremos que repetir esse "trambolhão" aí.
 
-E se, ao invés de dar `echo`, atribuíssemos o valor (um dos resultado) na própria variável `$_POST['foo']`?
+E se, ao invés de dar `echo`, atribuíssemos o valor na própria variável `$_POST['foo']`?
 
     $_POST['foo'] = ( isset($_POST['foo']) ) ? $_POST['foo'] : null;
 
@@ -128,17 +130,17 @@ do script, veja:
 ```php
 <?php
 
-/*
- * Recebemos os dados no começo do script
- */
+#
+# Recebemos os dados no começo do script
+#
 $_POST['laranja'] = ( isset($_POST['laranja']) ) ? $_POST['laranja'] : null;
 $_POST['banana']  = ( isset($_POST['banana']) )  ? $_POST['banana']  : null;
 $_POST['pera']    = ( isset($_POST['pera']) )    ? $_POST['pera']    : null;
 $_POST['abacaxi'] = ( isset($_POST['abacaxi']) ) ? $_POST['abacaxi'] : null;
 
-/*
- * Apartir deste ponto podemos utilizar o array sem medo
- */
+#
+# Apartir deste ponto podemos utilizar o array sem medo
+#
 echo $_POST['laranja'];
 echo $_POST['banana'];
 echo $_POST['pera'];
@@ -157,23 +159,22 @@ A forma abaixo já foi muito usual:
 ```php
 <?php
 
-/*
- * Recebemos os dados no começo do script
- */
+#
+# Recebemos os dados no começo do script
+#
 $laranja = ( isset($_POST['laranja']) ) ? $_POST['laranja'] : null;
 $banana  = ( isset($_POST['banana']) )  ? $_POST['banana']  : null;
 $pera    = ( isset($_POST['pera']) )    ? $_POST['pera']    : null;
 $abacaxi = ( isset($_POST['abacaxi']) ) ? $_POST['abacaxi'] : null;
 
-/*
- * Apartir deste ponto podemos utilizar as variáveis sem medo
- */
+#
+# Apartir deste ponto podemos utilizar as variáveis sem medo
+#
 echo $laranja;
 echo $banana;
 echo $pera;
 echo $abacaxi;
 ```
-
 
 Mas ele duplica as variáveis.
 
@@ -183,3 +184,15 @@ O sabor da laranja está tanto em `$_POST['laranja']` como em `$laranja`.
     echo $laranja
 
 Se, duplicar variáveis não for um problema para você, então para mim também não é.
+
+
+## Exercícios
+
+1) Você leu o artigo anterior [Enviado dados via GET e POST ](/php/enviando-dados-via-get-post/) ? Não, então leia.
+
+2) Experimente os exemplos aqui demonstrados em sua própria máquina, veja a coisa funcionando com seus próprios olhos.
+
+3) Modifique os exemplos para receber mais variáveis e perceba como o seu código fica mais menos passível de manutenção
+(de difícil manutenção) conforme o número de variáveis cresce.
+
+

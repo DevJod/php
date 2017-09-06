@@ -90,7 +90,7 @@ A resposta também compreende três elementos:
 
 Repare na "linha de estatuto" que temos o código de resposta `200` e sua descrição `OK`.
 
-Abaixo temos as 4 respostas, de longe, mais encontradas.
+Abaixo temos as 4 respostas mais encontradas.
 
 <div class="bs-example">
     <table class="table  table-striped">
@@ -122,8 +122,6 @@ Abaixo temos as 4 respostas, de longe, mais encontradas.
     </table>
 </div>
 
-As descrições foram retiradas deste [artigo](http://pt.kioskea.net/contents/266-o-protocolo-http).
-
 
 
 ## GET
@@ -131,12 +129,10 @@ As descrições foram retiradas deste [artigo](http://pt.kioskea.net/contents/26
 O método pode ser gerado por um formulário web e também por um link em sua página HTML. Ele de limite de capacidade e a 
 URL só aceita (obviamente) strings, se você precisar passar arquivos deverá utilizar o POST.
 
-> O método GET utiliza a própria URI (normalmente chamada de URL) para enviar dados ao servidor,
-> quando enviamos um formulário pelo método GET, o navegador pega as informações do formulário
-> e coloca junto com a URI de onde o formulário vai ser enviado e envia, separando o endereço
-> da URI dos dados do formulário por um “?” (ponto de interrogação).
-> 
-> <small>Fonte: http://www.comocriarsites.com/html/como-funciona-os-metodos-get-e-post-diferencas/</small>
+O método GET utiliza a própria URI (normalmente chamada de URL) para enviar dados ao servidor,
+quando enviamos um formulário pelo método GET, o navegador pega as informações do formulário
+e coloca junto com a URI de onde o formulário vai ser enviado e envia, separando o endereço
+da URI dos dados do formulário por um “?” (ponto de interrogação).
 
 Ao final da URL colocamos o sinal `?` e utilizamos a combinação `nome=valor` separados pelo sinal `&`.
 
@@ -168,8 +164,14 @@ Na matéria seguinte veremos passo a passo como gerar as requisições, tanto em
 
 Eis o ponto central de uma aplicação web: ela é construída sobre um protocolo sem estado.
 
-Por "sem estado", queremos dizer que cada requisição não tem conhecimento de outra requisição e isso muda tudo.
+Por "sem estado", queremos dizer que cada requisição não tem conhecimento de outra requisição e isso muda tudo: muda a 
+lógica, muda a organização, muda a arquitetura. Você precisará entender e se acostumar com essa característica das 
+aplicações web.
 
-Muda a lógica, muda a organização, muda a arquitetura.
+Um dos desafios do desenvolvimento de uma aplicação web é justamente esse: sua perda de estado.
 
-Você precisará entender e se acostumar com essa característica das aplicações web. Alias iremos conquistar isso na prática.
+Para ajudar a solucionar essa questão existem mecanismos como as session (sessão) e os cookies. Eles são espaços onde
+podemos anotar alguma informação e utilisá-la enquanto a sessão estiver ativa (válida). Mas isso é assunto para outro
+artigo.
+
+

@@ -10,7 +10,7 @@ POST
 ---
 
 Criar uma requisição do tipo POST depende de um [formulário web], se você entende um pouco de HTML vai se sentir mais
-familizarizado.
+à vontade.
 
 Dentro da tag `form` temos duas propriedades importantes.
 
@@ -27,16 +27,7 @@ Apenas uma observação, o que o usuário digitar nas "inputs" será armazenado 
 usuário não digitar nada, o valor inicial será considerado. Inclusive se não tiver valor definido para `value` e o 
 usuário não digitar nada o servidor receberá `""` (__string de comprimento zero__).
 
-Chega de teoria e vamos testar essa "bagaça". Crie um arquivo denominado `script-para-onde-envio-os-dados.php` e insira
-as seguintes linhas nele:
-
-```php
-<?php
-var_dump($_POST);
-?>
-```
-
-Agora crie o html abaixo:
+Tente localizar o que eu acabei de lhe dizer no formulário abaixo (arquivo `index.html`).
 
 ```html
 <!DOCTYPE html>
@@ -47,7 +38,7 @@ Agora crie o html abaixo:
     </head>
     <body>
 
-        <form action="script-para-onde-envio-os-dados.php" method="post">
+        <form action="destino.php" method="post">
             <p>
                 Name:  <input type="text" name="username" value="João da Silva" />
             </p>
@@ -63,7 +54,15 @@ Agora crie o html abaixo:
 </html>
 ```
 
-Então, abra o HTML e clique no botão "Submit me", você deve estar vendo a seguinte informação:
+Precisamos criar nosso arquivo de destino `destino.php`e, então, inserir o conteúdo abaixo.
+
+```php
+<?php
+var_dump($_POST);
+?>
+```
+
+Abra o arquivo index.html em um navegador qulaquer e clique no botão "Submit me", você deve estar vendo a seguinte informação:
 
 !["Figura ilustrando uma pequena requisição HTTP"](var-dump-requisicao.png "Figura ilustrando uma pequena requisição HTTP")
 
@@ -80,7 +79,7 @@ GET (via formulário)
 Para criar uma requisição GET altere a propriedade `method` para "get" do nosso HTML.
 
     ...
-    <form action="script-para-onde-envio-os-dados.php" method="get">
+    <form action="destino.php" method="get">
     ...
 
 E, obviamente, altere o script PHP como mostrado abaixo:
@@ -131,7 +130,7 @@ Tente memorizar o esquema abaixo.
 
 Em nosso exemplo, a URL ficaria assim:
 
-    script-para-onde-envio-os-dados.php?nome=Joao da Silva&email=joado@dasilva.com
+    destino.php?nome=Joao da Silva&email=joado@dasilva.com
 
 Se você acertou o caminho do script verá que o resultado continua idêntico.
 
@@ -160,7 +159,7 @@ Altere o HTML como demonstrado abaixo, repare que eu apaguei o formulário e ins
     <body>
 
         <p>
-            <a href="script-para-onde-envio-os-dados.php?nome=Joao da Silva&email=joado@dasilva.com">Submit me!</a>
+            <a href="destino.php?nome=Joao da Silva&email=joado@dasilva.com">Submit me!</a>
         </p>
 
     </body>
@@ -168,3 +167,18 @@ Altere o HTML como demonstrado abaixo, repare que eu apaguei o formulário e ins
 ```
 
 Obs: Para que o HTML continue válido é preciso substituir os sinais `&` por `&amp;`.
+
+
+## Exercício
+
+1) Experimente cada um dos exemplos que ensinamos em sua própria máquina, tenha a certeza de que entendeu o que está 
+acontecendo e de como funciona o processo:
+
+- exemplo POST via formulário
+- exemplo GET via formulário
+- exemplo GET via link (âncora)
+
+
+2) Agora faça pequenas alterações, acrescente um campo qualquer e veja sua nova versão funcionando.
+
+

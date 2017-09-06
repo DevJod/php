@@ -1,6 +1,6 @@
 ---
 layout:      index
-title:       PHP7
+title:       PHP 7
 description: Aprenda PHP de verdade!
 ---
 

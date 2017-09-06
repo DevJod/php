@@ -1,5 +1,5 @@
 ---
-title:       O básico sobre a função preg match all
+title:       O básico sobre a função preg_match_all
 description: Aprenda o básico sobre a função preg_match_all() + exemplo
 serie:       PHP e Expressão Regular
 capitulo:    "regex"
@@ -8,7 +8,7 @@ ordem:       2
 
 
 A função `preg_match_all()` retornará um número inteiro com a quantidade de ocorrências encontradas pela expressão regular.
-    
+
     $resultado = preg_match_all();
 
 - A variável `$resultado` será `0` se a expressão não casar,
@@ -22,7 +22,7 @@ Os obrigatórios são:
     $resultado = preg_match_all($pattern, $subject, $matches);
 
 - `$pattern` será a expressão regultar,
-- `$subject` será o texto (assunto) que a expressão irá pesquisar 
+- `$subject` será o texto (assunto) que a expressão irá pesquisar
 - `$matches` será um array com as ocorrências (trechos encontrados).
 
 

@@ -1,5 +1,5 @@
 ---
-title:       Debugando código em PHP
+title:       Debugando código
 description: "O primeiro passo para quem precisa investigar o que o computador está executando."
 capitulo:    "começando"
 ordem:       6
@@ -83,10 +83,10 @@ uma forma mais legível.
 
 Veja o artigo [Instalando o x-debug no Linux](/linux/cookbook/xdebug/) para aprender como insta-lá-lo.
 
-Obviamente, não é só essa a função do x-debug, ele faz muito mais do que isso, inclusive pode ser integrado a IDE 
+Obviamente, não é só essa a função do x-debug, ele faz muito mais do que isso, inclusive pode ser integrado a IDE
 [Netbeans](/linux/cookbook/netbeans/) e outras "pequeñas cosas".
 
-Caso o seu script gere um erro me tempo de execução o x-debug mostrará o rastro que seu script deixou. Dá para ver o 
+Caso o seu script gere um erro me tempo de execução o x-debug mostrará o rastro que seu script deixou. Dá para ver o
 caminho percorrido facilitando, dessa forma, a depuração.
 
 Nesse caso, ele trás várias informações e leitor deve acostumar-se a "extrair" essas informações.

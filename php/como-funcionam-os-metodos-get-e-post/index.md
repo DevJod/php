@@ -6,8 +6,8 @@ ordem:       1
 ---
 
 Esta não é um artigo formal, nem acadêmico, sobre o protocolo HTTP, se você precisa dessas informações para seu TCC ou
-qualquer outro trabalho escolar, sinto em desapontá-lo. Neste artigo eu quero passar para você uma forma bem prática de
-como os verbos GET e POST são regidos pelo protocolo HTTP.
+qualquer outro trabalho escolar, que tal dar uma olha nesta [documentação](http://docs.w3cub.com/http/ 'link-externo').
+Neste artigo eu quero passar para você uma forma bem prática de como os verbos GET e POST são regidos pelo protocolo HTTP.
 
 ## O protocolo HTTP
 
@@ -20,8 +20,8 @@ Ele é definido pela especificação" [rfc2616](https://tools.ietf.org/html/rfc2
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fhAXgcD21iE?rel=0" frameborder="0" allowfullscreen></iframe>
 
-Se você assitiu ao vido acima vocçe percebeu que sempre caímos nas requisições (pedidos) e respostas. Elas são o objeto de estudo
-deste artigo.
+Se você assitiu ao vido acima, percebeu que sempre caímos nas requisições (pedidos) e respostas. Elas são o objeto de 
+estudo deste artigo.
 
 ![figura http](http-diagram.jpeg )
 

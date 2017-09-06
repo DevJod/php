@@ -33,7 +33,7 @@ Criando um array vazio.
 
     $arr = array();
 
-Se executarmos `var_dump($arr)` veremos que o array está vazio.
+Se executarmos `var_dump($arr)`, veremos que o array está vazio.
 
 ![figura ilustrando resultado de um array](array00.png "figura ilustrando resultado de um array")
 

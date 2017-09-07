@@ -39,7 +39,6 @@ description: Aprenda PHP de verdade!
     <a href="/php/manipulando-radio-button-com-php/" class="list-group-item">Manipulando radio button com PHP</a>
     <a href="/php/manipulando-combobox-com-php/" class="list-group-item">Manipulando combobox com PHP</a>
     <a href="/php/manipulando-listbox-com-php/" class="list-group-item">Manipulando listbox com PHP</a>
-    <a href="/php/foo/" class="list-group-item">Fazendo upload de arquivos</a>
 </div>
 
 ## Capítulo 5 - Slim a micro framework for PHP

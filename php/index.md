@@ -4,6 +4,17 @@ title:       PHP 7
 description: Aprenda PHP de verdade!
 ---
 
+
+## Introdução
+
+Seja muito bem vindo a este mini-curso de PHP!
+
+Este projeto encontra-se no [github](https://github.com/devfuria/php) e é feito com jekyll.
+
+Utilize os comentários de cada página, caso tenha alguma dúvida.
+
+Se precisar de ajuda com seu código, utilize o github.
+
 ## Capítulo 1 - Começando
 
 <div class="list-group">
@@ -59,20 +70,51 @@ description: Aprenda PHP de verdade!
 
 ## Sua vez...
 
-__Contribua__
+__...contribua!__
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- Encontrou algum erro de português (eu sou bom nisso rsss) ?
+- Algum texto mal redigido ou muito curto ?
+- Você acha que pode melhorar algum artigo ?
+- Gostaria de criar um artigo sobre PHP ?
 
-__Faltou cobrir algum tópico ?__
+Você pode clonar o [projeto](https://github.com/devfuria/php/) do GitHub e nos enviar um pull request.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-__Seu feedback, sua sugestão!__
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Veja [quem já contribuiu](https://github.com/devfuria/devfuria.com.br/graphs/contributors) com o projeto!!!
 
 
-## Documentação
+__...faltou cobrir algum tópico ?__
+
+Esse é um mini-curso sobre PHP, mas minha intenção é fazê-lo crescer cada vez mais. Eu jé tenho alguns tópicos em mente
+que irei cobrir e tenho a certeza que você também deve ter alguma coisa em mente, que tal compartilhar a sua ideia ?
+
+Na lista de [issus do repositório](https://github.com/devfuria/php/issues) você poderá ver o que já temos em mente
+(para evitar de criar um item duplicado). Fique à vontade para adicionar o item que você quizer. Também poderá escrever
+um comentário nos itens já existentes.
+
+Vamos lá!!! Sua ideia será sempre bem vinda!
+
+__...seu feedback, sua sugestão!__
+
+Preciso de seu feedback!
+
+Eu preparei este curso de PHP com o objetivo de ser um curso realmente eficaz. Agora preciso que você me dê o seu
+feedback sobre o curso, por exemplo...
+
+- O que achou do curso, de sua qualidade?
+- Faltou alguma explicação?
+- O que você tiraria?
+- O que você manteria?
+- Você sugere alguma melhoria?
+- Diga o que estiver em sua mente!
+
+Conto com sua participação para eu poder melhorar cada vez este pequeno curso de PHP.
+
+
+
+## Documentação Oficial
+
+Abaixo eu separei alguns links da documentação oficial do PHP. Para quem está começando é esencial desenvolver uma certa
+intimidade com a documentação.
 
 - [php.net - site oficial](http://php.net/ "link-externo")
 - [php.net - começando](http://php.net/manual/pt_BR/getting-started.php "link-externo")

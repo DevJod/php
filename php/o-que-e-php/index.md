@@ -6,7 +6,7 @@ ordem:       1
 ---
 
 > O PHP é uma linguagem popular de script (scripting language) de propósito geral que é especialmente adequada para
-> desenvolvimento web. Rápido, flexível e pragmático, o PHP pode fazer tudo, desde um blog até os sites mais populares 
+> desenvolvimento web. Rápido, flexível e pragmático, o PHP pode fazer tudo, desde um blog até os sites mais populares
 > do mundo.
 >
 > [Fonte: php.net](www.php.net)
@@ -38,7 +38,7 @@ Você pode abrir um editor de texto qualquer e criar um arquivo chamado `index.p
 
 Tenha a certeza de não ter nada escrito neste arquivo.
 
-Agora, adivinha o que faz esse script ? Nada, absolutamente nada. Seu script será interpretado como se fosse um arquivo 
+Agora, adivinha o que faz esse script ? Nada, absolutamente nada. Seu script será interpretado como se fosse um arquivo
 HTML, a única coisa que lembra que ele é um script é sua extensão `.php`.
 
 ```php
@@ -49,7 +49,7 @@ HTML, a única coisa que lembra que ele é um script é sua extensão `.php`.
 
 ```
 
-A primeira coisa que você deve fazer é inserir a tag inicial de php `<?php`. E sim, temos a tag de fechamento `?>`, mas 
+A primeira coisa que você deve fazer é inserir a tag inicial de php `<?php`. E sim, temos a tag de fechamento `?>`, mas
 não é necessário utilizá-la caso o conteúdo seja inteiro de php, veja exemplo abaixo.
 
 ```php
@@ -61,7 +61,7 @@ não é necessário utilizá-la caso o conteúdo seja inteiro de php, veja exemp
 
 Agora seu arquivo se parece com um script php (rssss). Vamos dar vida a ele ?
 
-A função [echo](https://secure.php.net/manual/pt_BR/function.echo.php) exibe uma string. As strings são representadas e 
+A função [echo](https://secure.php.net/manual/pt_BR/function.echo.php) exibe uma string. As strings são representadas e
 envolvidas por aspas duplas ou simples.
 
 Ao final de cada linha, temos o símbolo `;`
@@ -165,7 +165,7 @@ versão que não seja a mais atual, vai?
 
 ## Olha o que eu selecionei para vc
 
-- [O que é o PHP?](https://www.youtube.com/results?search_query=hist%C3%B3ria+do+php)
+- [O que é o PHP?](https://secure.php.net/manual/pt_BR/intro-whatis.php)
 - [O que o PHP pode fazer?](https://secure.php.net/manual/pt_BR/intro-whatcando.php)
 - [Um simples tutorial](https://secure.php.net/manual/pt_BR/tutorial.php)
 - [wikipedia - PHP](https://pt.wikipedia.org/wiki/PHP)

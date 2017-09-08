@@ -25,14 +25,20 @@
           <!-- <nav id="toc" data-toggle="toc" data-spy="affix">
             <p>Neste artigo...</p>
           </nav> -->
+          <p>Neste capítulo...</p>
           {% include get-capitulo.html page_serie=page.capitulo %}
           {% include menus.html %}
         </div>
       </div>
     </article>
 
+    <hr />
+
+    {% include disqus.html %}
+
+    {% include footer.html %}
     {% include footer-js.html %}
-    
+
   </body>
 </html>
 

@@ -142,4 +142,4 @@ if ($resultado === 1) {
 - - -
 Fonte
 
-- [Manual do PHP - preg_match()](http://php.net/manual/en/function.preg-match.php "link-externo")
+- [Manual do PHP - preg_match()](http://php.net/manual/en/function.preg-match.php)

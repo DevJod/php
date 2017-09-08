@@ -115,4 +115,4 @@ var_dump($matches);
 - - -
 Fonte 
 
-- [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php "link-externo")
+- [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php)

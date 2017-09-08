@@ -1,8 +1,5 @@
-# baseurl: /foo
-
-#markdown: redcarpet
-#redcarpet:
-#    extensions: [with_toc_data]
+enable_disqus:    false
+enable_analytics: false
 
 highlighter: rouge
 permalink:   pretty

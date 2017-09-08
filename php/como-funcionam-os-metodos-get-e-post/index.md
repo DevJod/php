@@ -6,7 +6,7 @@ ordem:       1
 ---
 
 Esta não é um artigo formal, nem acadêmico, sobre o protocolo HTTP, se você precisa dessas informações para seu TCC ou
-qualquer outro trabalho escolar, que tal dar uma olha nesta [documentação](http://docs.w3cub.com/http/ 'link-externo').
+qualquer outro trabalho escolar, que tal dar uma olha nesta [documentação](http://docs.w3cub.com/http/).
 Neste artigo eu quero passar para você uma forma bem prática de como os verbos GET e POST são regidos pelo protocolo HTTP.
 
 ## O protocolo HTTP
@@ -16,7 +16,7 @@ uma apresentação formal do protocolo não é o objetivo deste artigo (como já
 do que vem a ser o HTTP.
 
 O Hypertext Transfer Protocol, é um protocolo de comunicação utilizado para sistemas de informação de hipermídia, distribuídos e colaborativos.
-Ele é definido pela especificação" [rfc2616](https://tools.ietf.org/html/rfc2616 "link-externo")
+Ele é definido pela especificação" [rfc2616](https://tools.ietf.org/html/rfc2616)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fhAXgcD21iE?rel=0" frameborder="0" allowfullscreen></iframe>
 

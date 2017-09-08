@@ -13,7 +13,7 @@ ordem:       1
 
 PHP é uma linguagem de programação para uso geral.
 
-Inicialmente, projetada por [Rasmus Lerdorf](http://pt.wikipedia.org/wiki/Rasmus_Lerdorf "link-externo") na década de
+Inicialmente, projetada por [Rasmus Lerdorf](http://pt.wikipedia.org/wiki/Rasmus_Lerdorf) na década de
 1990, tinha como objetivo principal contar as visitas que eram realizadas em seu currículo on-line.  Hoje (quase 20 anos
 depois, estrou [re]escrevendo este artigo em julho/2017) ainda é isso o que fazemos com PHP, alteramos o  HTML de forma
 dinâmica lá no lado do servidor. À primeira vista, pode parecer algo simples e até estúpido, mas é assim que é, e posso

@@ -95,13 +95,13 @@ Conto com sua participação para eu poder melhorar cada vez este pequeno curso 
 Abaixo eu separei alguns links da documentação oficial do PHP. Para quem está começando é esencial desenvolver uma certa
 intimidade com a documentação.
 
-- [php.net - site oficial](http://php.net/ "link-externo")
-- [php.net - começando](http://php.net/manual/pt_BR/getting-started.php "link-externo")
-- [php.net - instalação e gonfiguração](http://php.net/manual/pt_BR/install.php "link-externo")
-- [php.net - referência da linguagem](http://php.net/manual/pt_BR/langref.php "link-externo")
-- [php.net - segurança](http://php.net/manual/pt_BR/security.php "link-externo")
-- [php.net - características](http://php.net/manual/pt_BR/features.php "link-externo")
-- [php.net - referência das funções](http://php.net/manual/pt_BR/funcref.php "link-externo")
+- [php.net - site oficial](http://php.net/)
+- [php.net - começando](http://php.net/manual/pt_BR/getting-started.php)
+- [php.net - instalação e gonfiguração](http://php.net/manual/pt_BR/install.php)
+- [php.net - referência da linguagem](http://php.net/manual/pt_BR/langref.php)
+- [php.net - segurança](http://php.net/manual/pt_BR/security.php)
+- [php.net - características](http://php.net/manual/pt_BR/features.php)
+- [php.net - referência das funções](http://php.net/manual/pt_BR/funcref.php)
 
 
 

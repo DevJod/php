@@ -74,4 +74,4 @@ A função `preg_math_all()` carregará a varirável `$matches` com todos as oco
 - - -
 Fonte
 
-- [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php "link-externo")
+- [Manual do PHP - preg_match_all()](http://www.php.net/manual/pt_BR/function.preg-match-all.php)

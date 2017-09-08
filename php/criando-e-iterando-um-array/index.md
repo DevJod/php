@@ -172,7 +172,7 @@ Resultado:
 
 ![figura ilustrando resultado de um array](array05.png "figura ilustrando resultado de um array")
 
-Fonte: [Manual do PHP - foreach](http://www.php.net/manual/pt_BR/control-structures.foreach.php "link-externo")
+Fonte: [Manual do PHP - foreach](http://www.php.net/manual/pt_BR/control-structures.foreach.php)
 
 
 
@@ -201,6 +201,6 @@ Chegam no mesmo resultado:
 
 ## Fonte
 
-- [Manual do PHP - while](http://www.php.net/manual/pt_BR/control-structures.while.php "link-externo")
+- [Manual do PHP - while](http://www.php.net/manual/pt_BR/control-structures.while.php)
 
 

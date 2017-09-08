@@ -138,10 +138,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Documentação
 
-- [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php "link-externo")
-- [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php "link-externo")
+- [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php)
+- [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php)
 
 ## Comunidade
 
-- [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php "link-externo")
-- [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php "link-externo")
+- [Manual PHP - PCRE](http://www.php.net/manual/pt_BR/book.pcre.php)
+- [Manual PHP - POSIX](http://www.php.net/manual/en/reference.pcre.pattern.posix.php)

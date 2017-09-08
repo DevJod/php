@@ -16,54 +16,34 @@ Utilize os comentários de cada página, caso tenha alguma dúvida. Se precisar 
 
 ## Capítulo 1 - Começando
 
-<div class="list-group">
-    <a href="/php/o-que-e-php/" class="list-group-item">O que é PHP</a>
-    <a href="/php/instalando-o-ambiente/" class="list-group-item">Instalando o ambiente Linux</a>
-    <a href="/php/instalando-o-ambiente/" class="list-group-item">Instalando o ambiente Windows</a>
-    <a href="/php/sintaxe-basica-de-php/" class="list-group-item">Sintaxe básica</a>
-    <a href="/php/debugando-codigo/" class="list-group-item">Debugando código em PHP</a>
-</div>
+{% include get-capitulo.html page_serie="começando" %}
+{% include menus.html %}
 
 ## Capítulo 2 - Conhecendo o inimigo
 
-<div class="list-group">
-    <a href="/php/expressoes-condicionais/" class="list-group-item">Expressões Condicionais</a>
-    <a href="/php/criando-e-iterando-um-array-em-php/" class="list-group-item">Criando e iterando um array</a>
-    <a href="/php/funcoes/" class="list-group-item">Funcões</a>
-</div>
+{% include get-capitulo.html page_serie="conhecendo-o-inimigo" %}
+{% include menus.html %}
 
 
 ## Capítulo 3 - O mínimo sobre o protocolo HTTP
 
-<div class="list-group">
-    <a href="/php/como-funcionam-os-metodos-get-e-post/" class="list-group-item">Como funcionam os métodos GET e POST</a>
-    <a href="/php/enviando-dados-via-get-post/" class="list-group-item">Enviado dados via GET e POST</a>
-    <a href="/php/recebendo-dados-via-get-post/" class="list-group-item">Recebendo dados via GET e POST</a>
-</div>
+{% include get-capitulo.html page_serie="http" %}
+{% include menus.html %}
 
 ## Capítulo 4 - Lidando com formulários
 
-<div class="list-group">
-    <a href="/php/manipulando-os-controles-text-password-e-textarea/" class="list-group-item">Manipulando os controles text, password e textarea</a>
-    <a href="/php/manipulando-checkboxes-com-php/" class="list-group-item">Manipulando checkboxes com PHP</a>
-    <a href="/php/manipulando-radio-button-com-php/" class="list-group-item">Manipulando radio button com PHP</a>
-    <a href="/php/manipulando-combobox-com-php/" class="list-group-item">Manipulando combobox com PHP</a>
-    <a href="/php/manipulando-listbox-com-php/" class="list-group-item">Manipulando listbox com PHP</a>
-</div>
+{% include get-capitulo.html page_serie="formularios" %}
+{% include menus.html %}
 
 ## Capítulo 5 - Slim a micro framework for PHP
 
-<div class="list-group">
-    <a href="/php/hello-world-com-slimframework/" class="list-group-item">Hello World com slimframework</a>
-</div>
+{% include get-capitulo.html page_serie="slimframework" %}
+{% include menus.html %}
 
 ## Capítulo 6 - Expressões Regulares
 
-<div class="list-group">
-    <a href="/php/o-basico-sobre-a-função-preg-match/" class="list-group-item">O básico sobre a função preg match</a>
-    <a href="/php/o-basico-sobre-a-funcao-preg-match-all/" class="list-group-item">O básico sobre a função preg match all</a>
-    <a href="/php/referencia-da-funcao-preg-match-all/" class="list-group-item">Referência da função preg_match_all</a>
-</div>
+{% include get-capitulo.html page_serie="regex" %}
+{% include menus.html %}
 
 
 

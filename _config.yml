@@ -14,3 +14,6 @@ defaults:
       path: ""
     values:
       layout: "artigo"
+
+# for sitemap
+url: http://www.devfuria.com.br

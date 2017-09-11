@@ -1,5 +1,5 @@
 ---
-title:       Hello World com slimframework
+title:       Hello World com Slim Framework
 description: Este artigo é um Hello World com o micro framework Slim
 capitulo:    "slimframework"
 ordem:       1
@@ -18,7 +18,7 @@ Você poderá simplesmente baixar os arquivos e fazer referência em seus script
 composer, neste caso, você deverá ter o composer devidamente instalado em sua máquina.
 
 Imaginado que você possui o composer instalado, vamos instalar o Slim através do composer. Crie um pasta qualquer em
-seu documentroot, eu estou utilizando o nome `foo`. 
+seu documentroot, eu estou utilizando o nome `foo`.
 
     mkdir /var/www/foo
     cd /var/www/foo
@@ -83,12 +83,12 @@ Após a instalação, sua estrutura de arquivos deverá ser semelhante a exibida
 
 Para testar  basta acessar via navegador `http://localhost/foo/hello/fulano`.
 
-Caso você receba o erro `500 Internal Server Error` poderá consultar os arquivos de log do Apache. 
+Caso você receba o erro `500 Internal Server Error` poderá consultar os arquivos de log do Apache.
 
 No Ubuntu, o arquivo encontra-se no seguinte local `var/log/apache2/error.log` você poderá abrí-lo em um editor de texto qualquer ou ainda
 visualizar pelo terminal através do utilitário [cat](/linux/utilitario-cat/) dessa forma...
 
     cat var/log/apache2/error.log
 
-Normalmente aparece o erro `RewriteEngine not allowed here` é por que esquecemos de 
+Normalmente aparece o erro `RewriteEngine not allowed here` é por que esquecemos de
 [habilitar o mod_rewrite no Apache](/linux/apache-habilitar-mod_rewrite-no-apache-mod/).

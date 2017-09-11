@@ -4,7 +4,6 @@ title:       PHP 7
 description: Aprenda PHP de verdade!
 ---
 
-
 ## Introdução
 
 Seja muito bem vindo a este mini-curso de PHP!

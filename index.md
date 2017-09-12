@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: null
 ---
 
 [php](php/)

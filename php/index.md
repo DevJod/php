@@ -9,7 +9,7 @@ description: Aprenda PHP de verdade!
 Seja muito bem vindo a este mini-curso de PHP!
 
 Este projeto está disponível no [github](https://github.com/devfuria/php) e encontra-se na versão
-[1.0](https://github.com/devfuria/php/releases) de dezembro de 2017, veja o log de
+[0.1](https://github.com/devfuria/php/releases) de Setembro de 2017, veja o log de
 [cada atualização](https://github.com/devfuria/php/commits/master).
 Utilize os comentários de cada página, caso tenha alguma dúvida. Se precisar de ajuda com seu código, utilize o github.
 

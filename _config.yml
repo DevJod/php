@@ -17,3 +17,6 @@ defaults:
 
 # for sitemap
 url: http://www.devfuria.com.br
+
+# email
+email: "flaviomicheletti arroba hotmail.com"

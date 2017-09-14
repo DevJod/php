@@ -5,16 +5,16 @@ capitulo:    "slimframework"
 ordem:       1
 ---
 
-O Slim é um micro framework para PHP. 
+O Slim é um micro framework para PHP.
 
 Cabe a você decidir se deve usá-lo ou não. Eu não vou ficar aqui dando uma de garoto propaganda do Slim, até porque não
-acho ele maravilhoso, tão pouco acho que ele seja a "solução da lavoura". Ele é uma ferramenta, talvez seja uma boa 
+acho ele maravilhoso, tão pouco acho que ele seja a "solução da lavoura". Ele é uma ferramenta, talvez seja uma boa
 ferramenta, mas é só isso.
 
-Eu produzi alguns projetos grandes com o Slim e ele caiu muito bem nos tipos de projetos que eu tive que encarar. Gosto 
+Eu produzi alguns projetos grandes com o Slim e ele caiu muito bem nos tipos de projetos que eu tive que encarar. Gosto
 do Slim, primeiro porque ele pe micro, segundo porque ele é bem simples de usar.
 
-Ele ajuda a criar interfaces REST, veja o [projeto no GitHUb](https://github.com/slimphp/Slim) e a 
+Ele ajuda a criar interfaces REST, veja o [projeto no GitHUb](https://github.com/slimphp/Slim) e a
 [documentação oficial](https://www.slimframework.com/).
 
 A __primeira coisa__ é habilitar o servidor para reescrita de URL do servidor web. Se o seu servidor é o Apache, veja este
@@ -56,10 +56,10 @@ No terminal do Linux você deve receber uma mensagem parecida com esta...
     Package operations: 6 installs, 0 updates, 0 removals
       - Installing psr/container (1.0.0): Loading from cache
       - Installing container-interop/container-interop (1.2.0): Loading from cache
-      - Installing nikic/fast-route (v1.2.0): Downloading (100%)         
+      - Installing nikic/fast-route (v1.2.0): Downloading (100%)
       - Installing psr/http-message (1.0.1): Loading from cache
       - Installing pimple/pimple (v3.2.2): Loading from cache
-      - Installing slim/slim (3.8.1): Downloading (100%)         
+      - Installing slim/slim (3.8.1): Downloading (100%)
     Writing lock file
     Generating autoload files
 
@@ -99,8 +99,7 @@ Após a instalação, sua estrutura de arquivos deverá ser semelhante a exibida
         composer.json
         index.php
 
-Para testar  basta acessar via navegador `http://localhost/foo/hello/seu-nome`.
-
+Para testar basta acessar via navegador `http://localhost/foo/hello/seu-nome`.
 
 ## Resolvendo problemas
 

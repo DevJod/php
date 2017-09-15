@@ -69,12 +69,25 @@ echo somarDoisNumeros(2, 4);
 // print 6
 ```
 
+Repare que o nome da função segue o estilo __camel case__, mas podemos usar o estilo __underscore case__ conforme
+demosntrado abaixo.
+
+```php
+<?php
+
+function somar_dois_numeros($parametro1, $parametro2) {
+    $soma = $parametro1 + $parametro2;
+    return $soma;
+}
+
+echo somar_dois_numeros(5, 3);
+echo somar_dois_numeros(2, 4);
+```
 
 ## Parâmetros opcionais (ou valores padrão?)
 
 
-Temos os parâmetros opcionais (ou não). Veja no exemplo abaixo que o terceiro parâmetro é opcional, ele pode ou não ser
-passado (enviado).
+Temos os parâmetros opcionais. Veja no exemplo abaixo que o terceiro parâmetro é opcional, ele pode ou não ser enviado.
 
 ```php
 <?php
@@ -91,16 +104,16 @@ test(1, 2, 3);
 ```
 
 Você não precisa se preocupar com o terceiro parâmetro porque ele, além de ser opcional, também é o valor padrão, quero
-dizer que quando não passamos o um valor para `$c` o valor padrão (neste caso `0`) será utilizado.
+dizer que quando não passamos um valor para `$c` o valor padrão (neste caso `0`) será utilizado.
 
-Dito de outra forma, o parametro não é opcional, opcional é o valor que você vai fornecer para a função, caso não 
-informar, sera considerado o valor padrão. Entendeu mano ?
+Dito de outra forma, o parametro não é opcional, opcional é o valor que você vai fornecer para a função, caso você não 
+informe, será considerado o valor padrão.
 
 
 
 ## Parâmetros por valor e por referência 
 
-Temos tabém os dados que são passados por "valor" ou por "referência".
+Temos também os dados que são passados por "valor" ou por "referência".
 
 Abaixo um  exemplo de parâmetro passado por valor.
 
@@ -116,7 +129,8 @@ function alterar($a) {
     $a = 123;
 }
 
-echo $meu_a ; // o que será que ele exibirá aqui ?
+alterar($meu_a);
+echo $meu_a; // o que será que ele exibirá aqui ?
 ```
 
 Abaixo um  exemplo de parâmetro passado por referência.
@@ -133,6 +147,15 @@ function alterar(&$a) {
     $a = 123;
 }
 
-echo $meu_a ; // e agora, o que será que ele exibirá aqui ?
+alterar($meu_a);
+echo $meu_a; // e agora, o que será que ele exibirá aqui ?
 ```
 
+## Exercícios
+
+1. Crie um script com a função `somar_dois_numeros` e veja ela funcionar com várias entradas (valores) diferentes.
+2. Crie um função qualquer com pelo menos um parâmetro opcional.
+3. Crie um função qualquer com pelo menos um valor padrão.
+4. Explique para sí mesmo (como se estivese dando uma aula) as diferênças e semelhanças entre parâmetro opcional e valor padrão.
+5. Sobre os parâmetros passados por referência e por valor, me diga qual é o resultado do código utilizado neste artigo
+   (utilize os comentários)

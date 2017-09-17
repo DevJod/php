@@ -1,5 +1,5 @@
 ---
-title:       Fazendo o Slimframework exibir os erros detalhadamente
+title:       Fazendo o Slim Framework exibir os erros detalhadamente
 description: Como fazer para que o Slim mostre o 'traceback' (call stack) do erro !!!
 capitulo:    "slimframework"
 ordem:       2

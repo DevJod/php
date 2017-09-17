@@ -34,7 +34,7 @@ Utilize os comentários de cada página, caso tenha alguma dúvida. Se precisar 
 {% include get-capitulo.html page_serie="formularios" %}
 {% include menus.html %}
 
-## Capítulo 5 - Slim a micro framework for PHP
+## Capítulo 5 - Slim um micro framework para PHP
 
 {% include get-capitulo.html page_serie="slimframework" %}
 {% include menus.html %}

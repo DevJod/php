@@ -13,7 +13,7 @@ Quando a requisição for GET usaremos `$_GET`.
 
 Quando a requisição for POST usaremos `$_POST`.
 
-Ambas são do tipo [array](/php/criando-e-iterando-um-array-em-php/).
+Ambas são do tipo [array](/php/criando-e-iterando-um-array/).
 
 Podemos ver o resultado  das variáveis da seguinte forma:
 
@@ -62,7 +62,7 @@ A função `isset()` nos diz se determinada variável foi inicializada ("setada"
 
 Traduzindo "is set" ao pé da letra (tradução tupiniquim) seria "está setado" ou melhor "foi inicializado".
 
-A função testa variáveis e também chaves associativas de [array](/php/criando-e-iterando-um-array-em-php/), então podemos utilizá-la
+A função testa variáveis e também chaves associativas de [array](/php/criando-e-iterando-um-array/), então podemos utilizá-la
 da seguinte forma:
 
     if(isset($_POST['foo'])) {

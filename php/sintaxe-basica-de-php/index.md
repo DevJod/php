@@ -442,7 +442,7 @@ foreach($arr as $valor) {
 // exibirá: "vermelha", "doce", "redonda", "maçã"
 ```
 
-Leia mais sobre [arrays](/php/criando-e-iterando-um-array-em-php/).
+Leia mais sobre [arrays](/php/criando-e-iterando-um-array/).
 
 
 
@@ -499,7 +499,7 @@ class Triangulo {
 }
 ```
 
-Leia mais sobre [objetos](/php/programacao-orientada-a-objetos)
+<!-- Leia mais sobre [objetos](/php/programacao-orientada-a-objetos) -->
 
 
 

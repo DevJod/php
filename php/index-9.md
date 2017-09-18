@@ -20,7 +20,7 @@ sitemap: false
 
 <div class="list-group">
     <a href="/php/expressoes-condicionais/" class="list-group-item">Expressões Condicionais</a>
-    <a href="/php/criando-e-iterando-um-array-em-php/" class="list-group-item">Criando e iterando um array</a>
+    <a href="/php/criando-e-iterando-um-array/" class="list-group-item">Criando e iterando um array</a>
     <a href="/php/funcoes/" class="list-group-item">Funcões</a>
     <a href="/php/foo/" class="list-group-item">Requisição de arquivos</a>
     <a href="https://secure.php.net/manual/pt_BR/language.variables.predefined.php" class="list-group-item">Variáveis Pré-definidas</a>

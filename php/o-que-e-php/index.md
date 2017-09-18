@@ -9,7 +9,7 @@ ordem:       1
 > desenvolvimento web. Rápido, flexível e pragmático, o PHP pode fazer tudo, desde um blog até os sites mais populares
 > do mundo.
 >
-> [Fonte: php.net](www.php.net)
+> [Fonte: php.net](http://www.php.net/)
 
 PHP é uma linguagem de programação para uso geral.
 

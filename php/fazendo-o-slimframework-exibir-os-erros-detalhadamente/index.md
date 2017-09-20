@@ -103,7 +103,7 @@ $app->get('/', function (Request $req,  Response $res, $args = []) {
 
 1. Execute o código acima nos 2 estados (true e false) e veja as diferênças de informações.
 2. Execute também o último exemplo em que é mostrado o valor de `$config`.
-3. Pesquise na documentação do Slim o que mais sobre o config, procure por __Application Configuration__.
+3. Pesquise na documentação do Slim sobre o que mais o config pode fazer, procure por __Application Configuration__.
 
 
 

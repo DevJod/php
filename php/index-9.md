@@ -2,7 +2,7 @@
 layout:      index
 title:       PHP7
 description: Aprenda PHP de verdade!
-sitemap: false
+published: false
 ---
 
 ## Capítulo 1 - Começando

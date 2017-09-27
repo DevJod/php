@@ -209,7 +209,7 @@ $arrCombo = array(
 
 Em outro momento, aprenderemos como carregar esse array a partir do banco de dados.
 
-Por enquanto vamos aprender como percorreremos o array.
+Por enquanto vamos aprender como percorrer o array.
 
 ```php
 foreach ($arrCombo as $key => $value) {
@@ -223,7 +223,7 @@ Agora basta juntar os código acima com nosso HTML, veja o resultado:
 <?php
 $arrCombo = array(
     "scs" => "São Caetano do Sul",
-    "sa" => "Santo André",
+    "sa"  => "Santo André",
     "sbc" => "São Bernardo do Campo"
 );
 ?>
@@ -301,7 +301,9 @@ $valor_selecionado = "sbc";
                 <select name="cidades">
                     <option></option>
                     <?php foreach ($arrCombo as $key => $value): ?>
-                        <?php $selected = ($valor_selecionado == $key) ? "selected=\"selected\"" : null; ?>
+                        <?php $selected = ($valor_selecionado == $key) ?
+                                          "selected=\"selected\"" :
+                                          null; ?>
                         <?php echo "<option value=\"$key\"  $selected>$value</option>"; ?>
                     <?php endforeach; ?>
                 </select>
@@ -331,7 +333,7 @@ function combobox($arrDados, $valorSelecionado = null) {
     echo "<option></option>";
     foreach ($arrDados as $key => $value) {
         $selected = ($valorSelecionado == $key) ? "selected=\"selected\"" : null;
-        echo "<option value=\"$key\"  $selected>$value</option>";
+        echo "<option value=\"$key\" $selected >$value</option>";
     }
 }
 ```
@@ -342,22 +344,29 @@ Nosso código ficaria assim...
 ```php
 <?php
 
+#
 # Função que ajuda a desenhar o controle HTML select
+#
 function combobox($arrDados, $valorSelecionado = null) {
     echo "<option></option>";
     foreach ($arrDados as $key => $value) {
         $selected = ($valorSelecionado == $key) ? "selected=\"selected\"" : null;
-        echo "<option value=\"$key\"  $selected>$value</option>";
+        echo "<option value=\"$key\" $selected >$value</option>";
     }
 }
 
+#
 # Array com os dados de nossa combo
+#
 $arrCombo = array(
     "scs" => "São Caetano do Sul",
-    "sa" => "Santo André",
+    "sa"  => "Santo André",
     "sbc" => "São Bernardo do Campo"
 );
 
+#
+# Deveríamos carregar esta informação a partir de uma fonte de dados
+#
 $valor_selecionado = "sbc";
 
 ?>
@@ -382,5 +391,4 @@ $valor_selecionado = "sbc";
 </html>
 ```
 
-Veja o código completo deste exemplo no GitHub
-[php-exemplo/forms/combobox/](https://github.com/devfuria/php-exemplos/tree/master/combobox).
+Veja aqui um [lab](/php/labs/combobox/) utilizando Bootstrap4.

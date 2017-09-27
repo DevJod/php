@@ -93,15 +93,15 @@ Altere o arquivo `form.php` conforme o conteúdo abaixo:
 
 ```php
 <?php
-/**
- * Aqui teríamos algum código para
- * recuperar de uma fonte de dados
- * as informações do formulário.
- *
- * Utilizaremos o código abaixo, apenas como fins ilustrativo,
- * imaginando que ele vem de alguma fonte.
- */
+#
+# Aqui teríamos algum código para recuperar de uma fonte de dados
+# as informações do formulário.
+#
+# Utilizaremos o código abaixo, apenas como fins ilustrativo,
+# imaginando que ele vem de alguma fonte.
+#
 $bandRock = "pink-floyd";
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -145,6 +145,5 @@ A linha estava comprida e dificultava a leitura do código, então eu formatei o
 código ficar mais legível, mas __não tome isso como um estilo__, ok? 
 
 
-Veja o código completo deste exemplo no GitHub
-[php-exemplo/forms/radio/](https://github.com/devfuria/php-exemplos/tree/master/radio).
+Veja aqui um [lab](/php/labs/radio/) utilizando Bootstrap4.
 

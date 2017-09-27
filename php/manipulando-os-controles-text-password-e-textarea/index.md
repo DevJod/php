@@ -5,17 +5,21 @@ capitulo:    "formularios"
 ordem:       1
 ---
 
-O formulário abaixo eu peguei emprestado do livro do Andy Budd (Criando Páginas Web com CSS)
+Entender o funcionamento de um formulário web é fundamental para desenvolvermos qualquer tipo de aplicação web.
 
-Clique na aba HTML para entender melhor sobre formulário web.
+O formulário é composto por tags HTML, por tanto, para o bom entendimento deste artigo, eu imagino que você já conheça
+o mínimo sobre HTML e como compor um formulário.
 
-<div data-height="542" data-theme-id="2897" data-slug-hash="hAKpl" data-default-tab="null" class='codepen'><pre><code></code></pre>
-<p>See the Pen <a href='http://codepen.io/flaviomicheletti/pen/hAKpl'>simple-html</a> by Flávio Micheletti (<a href='http://codepen.io/flaviomicheletti'>@flaviomicheletti</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-</div><script async src="//codepen.io/assets/embed/ei.js"></script>
+O comportamento do formulário, de suas propriedades `action` e `method`, bem como seus campos é o objeto de estudo deste artigo.
 
-Anotou os nomes dos campos?
+O formulário abaixo servirá de exemplo para este artigo.
 
-Então me diga, se clicarmos no botão "Submit", o que será enviado para o servidor?
+Você pode ver uma [demo](/php/labs/textbox/) funcionando.
+
+![](form.png)
+
+Sendo os nomes dos campos `author`, `email`, `pass` e `comments`, se clicarmos no botão "Submit", o que será enviado 
+para o servidor?
 
 Temos 4 campos.
 
@@ -60,15 +64,15 @@ Irá a seguinte lista de campos:
 - author
 - email
 - pass
-- text
+- comments
 
 Se enviarmos via post, a variável global será como o exemplo abaixo.
 
     $_POST = array(
-        "author" => ""
-        "email" => ""
-        "pass" => ""
-        "text" => ""
+        "author"   => ""
+        "email"    => ""
+        "pass"     => ""
+        "comments" => ""
     )
 
 E poderá ser acessado da seguinte forma.
@@ -76,14 +80,14 @@ E poderá ser acessado da seguinte forma.
     $_POST["author"];
     $_POST["email"];
     $_POST["pass"];
-    $_POST["text"];
+    $_POST["comments"];
 
 E procuramos receber tudo no início do script, veja:
 
-    $_POST['author'] = ( isset($_POST['author']) ) ? $_POST['author'] : null;
-    $_POST['email']  = ( isset($_POST['email']) )  ? $_POST['email']  : null;
-    $_POST['pass']   = ( isset($_POST['pass']) )   ? $_POST['pass']   : null;
-    $_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
+    $_POST['author']   = ( isset($_POST['author']) )   ? $_POST['author']   : null;
+    $_POST['email']    = ( isset($_POST['email']) )    ? $_POST['email']    : null;
+    $_POST['pass']     = ( isset($_POST['pass']) )     ? $_POST['pass']     : null;
+    $_POST['comments'] = ( isset($_POST['comments']) ) ? $_POST['comments'] : null;
 
 __E agora o que fazer com os dados?__
 
@@ -99,10 +103,10 @@ Nosso arquivo `form-action.php` terá o seguinte conteúdo...
 ```php
 <?php
 
-$_POST['author'] = ( isset($_POST['author']) ) ? $_POST['author'] : null;
-$_POST['email']  = ( isset($_POST['email']) )  ? $_POST['email']  : null;
-$_POST['pass']   = ( isset($_POST['pass']) )   ? $_POST['pass']   : null;
-$_POST['text']   = ( isset($_POST['text']) )   ? $_POST['text']   : null;
+$_POST['author']   = ( isset($_POST['author']) )    $_POST['author']    : null;
+$_POST['email']    = ( isset($_POST['email']) )    ? $_POST['email']    : null;
+$_POST['pass']     = ( isset($_POST['pass']) )     ? $_POST['pass']     : null;
+$_POST['comments'] = ( isset($_POST['comments']) ) ? $_POST['comments'] : null;
 
 # Visualizando os dados
 var_dump($_POST);
@@ -135,63 +139,50 @@ Então nosso formulário (arquivo `form.php`) ficará da seguinte forma:
 
 ```php
 <?php
-/**
- * Aqui teríamos algum código para
- * recuperar de uma fonte de dados
- * as informações do formulário.
- *
- * Utilizaremos o código abaixo, apenas como fins ilustrativo,
- * imaginando que ele vem de alguma fonte.
- */
-$author = "Tom Jobim";
-$email = "tom@jobim.com";
-$pass = "1234";
-$text = "algum texto";
+
+# Aqui teríamos algum código para recuperar de uma fonte de dados
+# as informações do formulário.
+#
+# Utilizaremos o código abaixo, apenas como fins ilustrativo,
+# imaginando que ele vem de alguma fonte.
+$author   = "Tom Jobim";
+$email    = "tom@jobim.com";
+$pass     = "1234";
+$comments = "algum texto";
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
+        <title>Exemplo devfuria</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="theme.css"></link>
-        <title>Simple Form</title>
     </head>
     <body>
+
         <form id="comments_form" action="form-action.php" method="post">
-            <fieldset>
-                <legend>Your Contact Details</legend>
-                <p>
-                    <label for="author">Name: <em class="required">(Required)</em></label>
-                    <input name="author" id="author" type="text" value="<?php echo $author; ?>" />
-                </p>
-
-                <p>
-                    <label for="email">Email Address:</label>
-                    <input name="email" id="email" type="text" value="<?php echo $email; ?>" />
-                </p>
-
-                <p>
-                    <label for="pass">Password:</label>
-                    <input name="pass" id="pass" type="password" value="<?php echo $pass; ?>" />
-                </p>
-            </fieldset>
-
-            <fieldset>
-                <legend>Comments</legend>
-                <p>
-                    <label for="text">Message: <em class="required">(Required)</em></label>
-                    <textarea name="text" id="text" cols="20" rows="10"><?php echo $text; ?></textarea>
-                </p>
-            </fieldset>
-            
+            <p>
+                <label for="author">Name: <em class="required">(Required)</em></label>
+                <input name="author" id="author" type="text" value="<?php echo $author; ?>" />
+            </p>
+            <p>
+                <label for="email">Email Address:</label>
+                <input name="email" id="email" type="text" value="<?php echo $email; ?>" />
+            </p>
+            <p>
+                <label for="pass">Password:</label>
+                <input name="pass" id="pass" type="password" value="<?php echo $pass; ?>" />
+            </p>
+            <p>
+                <label for="text">Message: <em class="required">(Required)</em></label>
+                <textarea name="text" id="text" cols="20" rows="10"><?php echo $text; ?></textarea>
+            </p>
             <p>
               <input type="submit" value="Submit!" />
             </p>            
-            
         </form>
+
     </body>
 </html>
 ```
 
-Veja o código completo deste exemplo no GitHub
-[php-exemplo/forms/textbox/](https://github.com/devfuria/php-exemplos/tree/master/textbox).
+Veja aqui um [lab](/php/labs/textbox/) utilizando Bootstrap4.

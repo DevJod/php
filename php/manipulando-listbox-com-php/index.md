@@ -134,14 +134,18 @@ O código abaixo retornará true caso encontre a `$key` dentro do array `$valore
 ```php
 <?php
 
+#
 # Array com os dados de nossa combo
+#
 $arrCombo = array (
     "scs" => "São Caetano do Sul",
-    "sa" => "Santo André",
+    "sa"  => "Santo André",
     "sbc" => "São Bernardo do Campo"
 );
 
+#
 # Array com os os valores que devem ser selecionados
+#
 $valores_selecionados = array (
    "scs",
    "sbc"
@@ -160,9 +164,11 @@ $valores_selecionados = array (
             <p>
                 <select multiple name="cidades[]">
                     <?php foreach ($arrCombo as $key => $value): ?>
-                        <?php $selected = (in_array($key, $valores_selecionados)) ? "selected=\"selected\"" : null; ?>
+                        <?php $selected = (in_array($key, $valores_selecionados)) ?
+                                          "selected=\"selected\"" :
+                                           null; ?>
                         <?php echo "<option value=\"$key\"  $selected>$value</option>"; ?>
-                    <?php endforeach; ?>
+                <?php endforeach; ?>
                 </select>
             </p>
             <p>
@@ -174,5 +180,4 @@ $valores_selecionados = array (
 </html>
 ```
 
-Veja o código completo deste exemplo no GitHub
-[php-exemplo/forms/listbox/](https://github.com/devfuria/php-exemplos/tree/master/listbox).
+Veja aqui uma [demo](/php/labs/listbox/) utilizando Bootstrap4.

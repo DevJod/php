@@ -145,5 +145,5 @@ A linha estava comprida e dificultava a leitura do código, então eu formatei o
 código ficar mais legível, mas __não tome isso como um estilo__, ok? 
 
 
-Veja aqui um [lab](/php/labs/radio/) utilizando Bootstrap4.
+Veja aqui um [lab](/php/labs/radio/form.php) utilizando Bootstrap4.
 

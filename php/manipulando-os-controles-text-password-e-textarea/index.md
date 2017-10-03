@@ -14,7 +14,7 @@ O comportamento do formulário, de suas propriedades `action` e `method`, bem co
 
 O formulário abaixo servirá de exemplo para este artigo.
 
-Você pode ver uma [demo](/php/labs/textbox/) funcionando.
+Você pode ver uma [demo](/php/labs/textbox/form.php) funcionando.
 
 ![](form.png)
 

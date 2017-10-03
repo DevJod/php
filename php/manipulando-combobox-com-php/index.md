@@ -391,4 +391,4 @@ $valor_selecionado = "sbc";
 </html>
 ```
 
-Veja aqui um [lab](/php/labs/combobox/) utilizando Bootstrap4.
+Veja aqui um [lab](/php/labs/combobox/form.php) utilizando Bootstrap4.

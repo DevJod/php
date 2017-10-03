@@ -1,4 +1,6 @@
 <?php
+// Arquivo "form-action.php"
+
 # Inicializando a variável $_POST['cidades']
 $_POST['cidades'] = isset($_POST['cidades']) ? $_POST['cidades'] : null;
 

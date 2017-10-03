@@ -180,4 +180,4 @@ $valores_selecionados = array (
 </html>
 ```
 
-Veja aqui uma [demo](/php/labs/listbox/) utilizando Bootstrap4.
+Veja aqui uma [demo](/php/labs/listbox/form.php) utilizando Bootstrap4.

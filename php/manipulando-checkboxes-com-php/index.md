@@ -13,7 +13,7 @@ Abaixo vemos o formulário web no qual trabalharemos.
 
 !["Figura ilustrando os controles checkboxes"](form-checkboxes.png "Figura ilustrando os controles checkboxes")
 
-Veja aqui um [lab](/php/labs/checkbox/) utilizando Bootstrap4.
+Veja aqui um [lab](/php/labs/checkbox/form.php) utilizando Bootstrap4.
 
 Crie o arquivo `form.php` e insira o seguinte conteúdo:
 

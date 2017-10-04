@@ -506,15 +506,15 @@ class Triangulo {
 ## Testes Unitários (ou teste de unidades)
 
 Testes unitários ou testes de unidades (para os mais puristas) são testes que escrevemos para que sejam realizados de
-uma forma automática. Haaaa! Como eu queria ter sido apresentado à eles logo no começo de minha formação,devia ser uma
+uma forma automática. Desabafo: como eu queria ter sido apresentado à eles logo no começo de minha formação, deveria ser uma
 matéria obrigatória em todo curso de tecnologia. Por isso eu já vou apresentando ele a você logo aqui na "sintaxe básica".
 
 Eu sei que você, ao bater seus olhos sobre o trecho da função `validarForma()` (acima apresentada), pensou imediatamente
-"que porr... é essa???" não, é brincadeira! Você pensou "como será que se valida a forma de um triângulo ?", ou ainda,
-"se eu passar tal valor para essas variáveis, o que será que a função devolve?", ou melhor, "será que essa função funciona ?".
+"como será que se valida a forma de um triângulo ?", ou ainda, "se eu passar tal valor para essas variáveis, o que será que a 
+função devolve?", ou melhor, "será que essa função funciona ?".
 
-As perguntas abaixo são elencadas em sua mente sempre que você se depara com um código estranho, desconhecido, feito
-por terceiros, tipo assim alienigina (você sabe que os extraterrestres já estão entre a gente né? rssss).
+Sempre que você se deparar com um código estranho, desconhecido, feito por terceiros, principalmente código do tipo alienígina, acabará se fazendo as seguintes perguntas :
+ 
 
 - o que esse código faz ?
 - como ele funciona ?
@@ -523,7 +523,7 @@ por terceiros, tipo assim alienigina (você sabe que os extraterrestres já est�
 - ele está funcionando ?
 - acabei de alterá-lo, será que continua funcionando ?
 
-Se existir um teste escrito, basta executar e você obterá sua resposta.
+Se existir um (pelo menos um) teste escrito, basta executar e você obterá as respostas.
 
 Escrevemos testes através das asserções, ou melhor, de um "assert function".
 
@@ -557,7 +557,7 @@ um alerta de bandeira vermelha.
 
 Para utilizar essa função você precisará de um framework de testes instaldo, além disso, teremos que ter uma certa
 intimidade com o que chamamos de terminal, pois executamos os teste no terminal. Abaixo segue um exemplo escrito para
-o frameork PHPUnit.
+o framework de testes __PHPUnit__.
 
 
 ```php

@@ -1,6 +1,6 @@
 ---
 title:       Recebendo dados via GET e POST
-description: Estamos no lado do servidor recebendo os dados das requisições GET e POST
+description: Este artigo encerra o capítulo sobre o protocolo HTTP, não esgotamos o assunto, apesar de termos explorado exaustivamente. Estamos no lado do servidor recebendo os dados das requisições GET e POST
 capitulo:    "http"
 ordem:       5
 ---
@@ -32,8 +32,9 @@ e se fosse via GET teríamos:
 Tudo igual, certo ? Certíssimo! A única mudança é na variável global, ou `$_GET` ou `$_POST`.
 
 
-Quando a key(chave) não existe
----
+
+## Quando a key(chave) não existe
+
 
 Quando executamos o script abaixo sem os devidos paramêtros...
 
@@ -50,13 +51,12 @@ echo $_GET['foo'];
 E aí, já sabe identificar o erro? O indice do array não foi definido (Undefined Index). Quer dizer, estamos querendo
 utilizar um índice de um array que ainda não foi definido (inicializado).
 
-Na verdade não é um erro e sim um `notice`. Em PHP temos erros fatais (error), notices e warnings. Mas isso é outro assunto.
+Na verdade não é um erro e sim um `notice`. Em PHP temos erros fatais (error), notices e warnings, mas isso é outro assunto.
 
 
 
+## Checando se o valor "chegou" ou não com isset()
 
-Checando se o valor "chegou" ou não com isset()
-----
 
 A função `isset()` nos diz se determinada variável foi inicializada ("setada").
 
@@ -79,8 +79,9 @@ Voltamos a 1 única linha, mas a acabamos com a legibilidade. Bom, será que com
 Ou menos ruim?
 
 
-Incializando com operador ternário
----
+
+## Incializando com operador ternário
+
 
 Para quem não conhece, em PHP temos o operador ternário  `(expressão) ? true : false ;`.
 
@@ -151,8 +152,8 @@ Economizamos algumas linhas sem prejudicar a legibilidade do código.
 
 
 
-Duplicando as variáveis
----
+## Duplicando as variáveis
+
 
 A forma abaixo já foi muito usual:
 
@@ -186,13 +187,14 @@ O sabor da laranja está tanto em `$_POST['laranja']` como em `$laranja`.
 Se, duplicar variáveis não for um problema para você, então para mim também não é.
 
 
+
 ## Exercícios
 
-1) Você leu o artigo anterior [Enviado dados via GET e POST ](/php/enviando-dados-via-get-post/) ? Não, então leia.
+1) Você leu os artigos anteriores ?
 
 2) Experimente os exemplos aqui demonstrados em sua própria máquina, veja a coisa funcionando com seus próprios olhos.
 
-3) Modifique os exemplos para receber mais variáveis e perceba como o seu código fica mais menos passível de manutenção
-(de difícil manutenção) conforme o número de variáveis cresce.
+3) Modifique os exemplos para receber mais variáveis e perceba, conforme o número de variáveis cresce, como o seu código
+fica menos passível de manutenção (de difícil manutenção).
 
 

@@ -9,7 +9,7 @@ ordem:       4
 POST
 ---
 
-Criar uma requisição do tipo POST depende de um [formulário web], se você entende um pouco de HTML vai se sentir mais
+Criar uma requisição do tipo POST depende de um __formulário web__, se você entende um pouco de HTML, irá se sentir mais
 à vontade.
 
 Dentro da tag `form` temos duas propriedades importantes.

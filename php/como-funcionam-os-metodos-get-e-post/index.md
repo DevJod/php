@@ -15,8 +15,8 @@ Não dá para falar sobre os verbos POST e GET sem introduzir o protocolo HTTP, 
 uma apresentação formal do protocolo não é o objetivo deste artigo (como já foi dito) eu vou deixar aqui uma "breve noção"
 do que vem a ser o HTTP.
 
-O Hypertext Transfer Protocol, é um protocolo de comunicação utilizado para sistemas de informação de hipermídia, distribuídos e colaborativos.
-Ele é definido pela especificação" [rfc2616](https://tools.ietf.org/html/rfc2616)
+O Hypertext Transfer Protocol, é um protocolo de comunicação utilizado para sistemas de informação de hipermídia,
+distribuídos e colaborativos. Ele é definido pela especificação" [rfc2616](https://tools.ietf.org/html/rfc2616)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fhAXgcD21iE?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -144,8 +144,8 @@ Também podemos utilizar o formulário web com a propriedade `metho` "setada" co
 ## POST
 
 O método só pode ser gerado através de um formulário web (ou através de AJAX), não dá para um link gerar o método post.
-Na verdade até dá, com uso de JS podemos ler os campos, criar a URL e enviar tudo via AJAX, mas essa é história para
-outra matéria.
+Na verdade até dá, com uso de JavaScript podemos ler os campos, criar a URL e enviar tudo via AJAX, só que saímos do
+campo de Back End e adentramos o campo do Front End.
 
 O método POST é mais seguro que o GET! <strong>Besteira, ele é tão inseguro quanto o GET.</strong> Só porque o usuário
 não vê os dados na URL não quer dizer que eles (os dados) estão protegidos.
@@ -171,7 +171,16 @@ aplicações web.
 Um dos desafios do desenvolvimento de uma aplicação web é justamente esse: sua perda de estado.
 
 Para ajudar a solucionar essa questão existem mecanismos como as session (sessão) e os cookies. Eles são espaços onde
-podemos anotar alguma informação e utilisá-la enquanto a sessão estiver ativa (válida). Mas isso é assunto para outro
+podemos anotar alguma informação e utilizá-la enquanto a sessão estiver ativa (válida). Mas isso é assunto para outro
 artigo.
 
 
+## Exercícios
+
+Este artigo foi mais teórico do que prático, não teremos um exercício em específico, mas que tal você buscar em outras
+fontes o reforço dos seguintes conceitos:
+
+1. Aplicação state less
+2. Respostas do protocolo HTTP
+3. Funcionamento de um formulário web
+4. As principais diferenças entre GET e POST

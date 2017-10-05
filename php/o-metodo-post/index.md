@@ -7,14 +7,14 @@ ordem:       2
 
 O método POST é bem parecido com o método GET visto no artigo anterior. Para quem está acompanhando esta série de artigos
 não terá grandes problemas para entender o presente artigo. Se acaso você tenha chegado aqui diretamente (sem ter passado
-pelos demais artigos) eu convido-o(a) a ler o artigo anterior.
+pelos demais artigos) eu convido você a ler o artigo anterior.
 
-O primeiro mito em relação aos métodos POST e GET é que o POST __não é mais seguro__ qu o método GET, ambos são 
+O primeiro mito em relação aos métodos POST e GET é que __o POST é mais seguro que o método GET__. Não, ambos são 
 inseguros, pois expõem os dados da requisição. A tendência em achar que o POST é mais seguro é porque ele envia os valores
-no corpo da mensagem HTTP e não na URL, como era o caso do GET. Mas isso não o torna mais seguro, sequer o torna seguro.
+no corpo da mensagem HTTP e não na URL, como é no caso do GET. Mas isso não o torna mais seguro, sequer o torna seguro.
 
-No artigo posterior a este nos veremos com mais detalhes o que é uma mensagem HTTP e você entederá o que "corpo" da 
-mensagem. Por enquanto vamos nos ater ao básico do método POST. 
+No artigo posterior a este nos veremos com mais detalhes o que é uma mensagem HTTP e você entederá o que é "corpo da 
+mensagem". Por enquanto vamos nos ater ao básico do método POST. 
 
 Como eu estava falando, ambos os métodos são parecidos. Se enviarmos um par "nome=valor" para seu script PHP ele (o
 script) poderá trabalhar internamente com os valores enviados. A superglobal para o método POST chama-se...
@@ -33,7 +33,7 @@ var_dump($_POST['nome']);
 A dificuldade agora é __como realizar a requisição com o verbo POST ?__
 
 No verbo GET bastava passar o par "nome=valor" junto a URL, exemplo `index.php?nome=valor` e também vimos algumas 
-estratégias no uso de variáveiscom links (âncoras HTML). Mas e agora, como  simular uma requisição POST ?
+estratégias no uso de variáveis com links (âncoras HTML), mas... e agora, como  simular uma requisição POST ?
 
 Você terá que utilizar um software específico para seu objetivo.
 
@@ -48,7 +48,7 @@ e criar a requisição POST. Envie alguma variáveis para um script qualquer e o
 Esses plugins o ajudarão a debugar seus scripts, mas eles não fazem parte de seu sistema. Em outras palavras, quero dizer
 que no seu sistema você realizará requisições POST através de formulários web, também é possível fazer isso com JavaScript.
 
-Abaixo vemos a tela do plugin HTTPrequester para FIrFox.
+Abaixo vemos a tela do plugin HTTPrequester para Firefox.
 
 ![](httprequester.PNG)
 
@@ -79,11 +79,11 @@ Caso você não tenha medo de HTML (rsss), seguimos...
 </form>
 ```
 
-Repare na propriedade `method`! É ela quem definirá o verbo, mas não se empolgue ela só aceita dois valores: `post` e `get`.
+Repare na propriedade `method`! É ela quem definirá o verbo, mas não se empolgue pois ela só aceita dois valores: `post` e `get`.
 
 A propriedade `action` aponta para o seu script de destino, para onde o formulário deve enviar os dados.
 
-Agora você deve estar se perguntando: "Como o formulário vai gerar os pares 'chave=valor'? " Boa pergunta! O proceso 
+Agora você deve estar se perguntando: "Como o formulário vai gerar os pares 'chave=valor'? " Boa pergunta! O processo 
 ocorre todo no lado do cliente, ou seja, no Front End. O formulário faz isso através das propriedades `name` e `value` 
 de cada controle (input, textarea, etc...).
 
@@ -102,3 +102,4 @@ Descobriu ? Não vou falar não, faça o teste. Vamos partir para os exercícios
 
 1. Crie uma requisição POST através de um software qualquer próprio para isso.
 2. Crie uma requisição POST através de um formulário web.
+3. Tenha a certeza de ter entendido como se forma os pares chave=valor no formulário web.

@@ -2,7 +2,7 @@
 title:       Enviado dados via GET e POST
 description: Estamos no navegador criando dois tipos de requisições GET e POST
 capitulo:    "http"
-ordem:       2
+ordem:       4
 ---
 
 
@@ -23,8 +23,8 @@ Cada campo (input) que inserimos gera um par `nome=valor`.
 
 A propriedade `name` será o nome e a propriedade `value` será o valor.
 
-Apenas uma observação, o que o usuário digitar nas "inputs" será armazenado e sobrescrito na propriedade `value`. Se o 
-usuário não digitar nada, o valor inicial será considerado. Inclusive se não tiver valor definido para `value` e o 
+Apenas uma observação, o que o usuário digitar nas "inputs" será armazenado e sobrescrito na propriedade `value`. Se o
+usuário não digitar nada, o valor inicial será considerado. Inclusive se não tiver valor definido para `value` e o
 usuário não digitar nada o servidor receberá `""` (__string de comprimento zero__).
 
 Tente localizar o que eu acabei de lhe dizer no formulário abaixo (arquivo `index.html`).
@@ -171,7 +171,7 @@ Obs: Para que o HTML continue válido é preciso substituir os sinais `&` por `&
 
 ## Exercício
 
-1) Experimente cada um dos exemplos que ensinamos em sua própria máquina, tenha a certeza de que entendeu o que está 
+1) Experimente cada um dos exemplos que ensinamos em sua própria máquina, tenha a certeza de que entendeu o que está
 acontecendo e de como funciona o processo:
 
 - exemplo POST via formulário

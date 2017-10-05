@@ -2,7 +2,7 @@
 title:       Como funcionam os métodos GET e POST
 description: Nosso objetivo é entender os métodos GET e POST.
 capitulo:    "http"
-ordem:       1
+ordem:       3
 ---
 
 Esta não é um artigo formal, nem acadêmico, sobre o protocolo HTTP, se você precisa dessas informações para seu TCC ou
@@ -20,7 +20,7 @@ Ele é definido pela especificação" [rfc2616](https://tools.ietf.org/html/rfc2
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fhAXgcD21iE?rel=0" frameborder="0" allowfullscreen></iframe>
 
-Se você assitiu ao vido acima, percebeu que sempre caímos nas requisições (pedidos) e respostas. Elas são o objeto de 
+Se você assitiu ao vido acima, percebeu que sempre caímos nas requisições (pedidos) e respostas. Elas são o objeto de
 estudo deste artigo.
 
 ![figura http](http-diagram.jpeg )
@@ -70,7 +70,7 @@ A resposta também compreende três elementos:
 
 - Uma linha de estatuto:
 
-    ```        
+    ```
     HTTP/1.1 200 OK
     ```
 
@@ -126,8 +126,8 @@ Abaixo temos as 4 respostas mais encontradas.
 
 ## GET
 
-O método pode ser gerado por um formulário web e também por um link em sua página HTML. Ele de limite de capacidade e a 
-URL só aceita (obviamente) strings, se você precisar passar arquivos deverá utilizar o POST.
+O método pode ser gerado por um formulário web e também por um link em sua página HTML. Ele possui limite de capacidade
+e a URL só aceita (obviamente) strings, se você precisar passar arquivos deverá utilizar o POST.
 
 O método GET utiliza a própria URI (normalmente chamada de URL) para enviar dados ao servidor,
 quando enviamos um formulário pelo método GET, o navegador pega as informações do formulário
@@ -143,17 +143,17 @@ Também podemos utilizar o formulário web com a propriedade `metho` "setada" co
 
 ## POST
 
-O método só pode ser gerado através de um formulário web (ou através de AJAX), não dá para um link gerar o método post. 
-Na verdade até dá, com uso de JS podemos ler os campos, criar a URL e enviar tudo via AJAX, mas essa é história para 
+O método só pode ser gerado através de um formulário web (ou através de AJAX), não dá para um link gerar o método post.
+Na verdade até dá, com uso de JS podemos ler os campos, criar a URL e enviar tudo via AJAX, mas essa é história para
 outra matéria.
 
-O método POST é mais seguro que o GET! <strong>Besteira, ele é tão inseguro quanto o GET.</strong> Só porque o usuário 
+O método POST é mais seguro que o GET! <strong>Besteira, ele é tão inseguro quanto o GET.</strong> Só porque o usuário
 não vê os dados na URL não quer dizer que eles (os dados) estão protegidos.
 
-Se a questão é segurança, eu posso te dar uma certeza: tem muita ladainha na net. Mas se quiser um lugar para começar, 
+Se a questão é segurança, eu posso te dar uma certeza: tem muita ladainha na net. Mas se quiser um lugar para começar,
 então veja a nossa seção sobre [segurança da informação](/seguranca-da-informacao/)
 
-Todo controle colocado dentro do formulário web com a propriedade `name` preenchida gera um par `nome=valor` para ser 
+Todo controle colocado dentro do formulário web com a propriedade `name` preenchida gera um par `nome=valor` para ser
 enviado no servidor.
 
 Na matéria seguinte veremos passo a passo como gerar as requisições, tanto em GET como em POST.
@@ -164,8 +164,8 @@ Na matéria seguinte veremos passo a passo como gerar as requisições, tanto em
 
 Eis o ponto central de uma aplicação web: ela é construída sobre um protocolo sem estado.
 
-Por "sem estado", queremos dizer que cada requisição não tem conhecimento de outra requisição e isso muda tudo: muda a 
-lógica, muda a organização, muda a arquitetura. Você precisará entender e se acostumar com essa característica das 
+Por "sem estado", queremos dizer que cada requisição não tem conhecimento de outra requisição e isso muda tudo: muda a
+lógica, muda a organização, muda a arquitetura. Você precisará entender e se acostumar com essa característica das
 aplicações web.
 
 Um dos desafios do desenvolvimento de uma aplicação web é justamente esse: sua perda de estado.

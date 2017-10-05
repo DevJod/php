@@ -2,7 +2,7 @@
 title:       Recebendo dados via GET e POST
 description: Estamos no lado do servidor recebendo os dados das requisições GET e POST
 capitulo:    "http"
-ordem:       3
+ordem:       5
 ---
 
 `$_GET` e `$_POST` são variáveis globais, você poderá utilizá-las em qualquer parte do código.
@@ -47,7 +47,7 @@ echo $_GET['foo'];
 
 !["PHP erro undefined index"](undefined-index.png "PHP erro undefined index")
 
-E aí, já sabe identificar o erro? O indice do array não foi definido (Undefined Index). Quer dizer, estamos querendo 
+E aí, já sabe identificar o erro? O indice do array não foi definido (Undefined Index). Quer dizer, estamos querendo
 utilizar um índice de um array que ainda não foi definido (inicializado).
 
 Na verdade não é um erro e sim um `notice`. Em PHP temos erros fatais (error), notices e warnings. Mas isso é outro assunto.
@@ -98,7 +98,7 @@ Então, de repente, surge a seguinte idéia:
         # retornar null
     }
 
-Seria ótimo, mas agora temos 5 linhas. 
+Seria ótimo, mas agora temos 5 linhas.
 
 Neste caso poderemos utilizar o operador ternário.
 

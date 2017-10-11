@@ -23,7 +23,7 @@ distribuídos e colaborativos. Ele é definido pela especificação" [rfc2616](h
 Se você assitiu ao vido acima, percebeu que sempre caímos nas requisições (pedidos) e respostas. Elas são o objeto de
 estudo deste artigo.
 
-![figura http](http-diagram.jpeg )
+![figura http](http-diagram.jpeg)
 
 
 

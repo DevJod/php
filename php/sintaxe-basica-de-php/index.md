@@ -323,7 +323,7 @@ O PHP suporta oito tipos primitivos.
     + resource
     + NULL
 
-O tipo __booleano__ aceita `true` ou ``false`, é case insensitive, ou seja, aceita `True`, ``TRUE` ou `true`, eu gosto de
+O tipo __booleano__ aceita `true` ou `false`, é case insensitive, ou seja, aceita `True`, `TRUE` ou `true`, eu gosto de
 usar tudo minúsculo.
 
 O tipo __interge__ (inteiro) é um número do conjunto Z = {..., -2, -1, 0, 1, 2, ...}.
@@ -510,11 +510,11 @@ uma forma automática. Desabafo: como eu queria ter sido apresentado à eles log
 matéria obrigatória em todo curso de tecnologia. Por isso eu já vou apresentando ele a você logo aqui na "sintaxe básica".
 
 Eu sei que você, ao bater seus olhos sobre o trecho da função `validarForma()` (acima apresentada), pensou imediatamente
-"como será que se valida a forma de um triângulo ?", ou ainda, "se eu passar tal valor para essas variáveis, o que será que a 
+"como será que se valida a forma de um triângulo ?", ou ainda, "se eu passar tal valor para essas variáveis, o que será que a
 função devolve?", ou melhor, "será que essa função funciona ?".
 
 Sempre que você se deparar com um código estranho, desconhecido, feito por terceiros, principalmente código do tipo alienígina, acabará se fazendo as seguintes perguntas :
- 
+
 
 - o que esse código faz ?
 - como ele funciona ?
@@ -547,7 +547,7 @@ $actual   = somar(8, 2);
 if ($expected == $actual) {
     echo "green flag, seu teste passou!";
 } else {
-    echo "red flag, seu teste não pasou!";
+    echo "red flag, seu teste não passou!";
 }
 ```
 

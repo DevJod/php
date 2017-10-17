@@ -39,7 +39,12 @@ Utilize os comentários de cada página, caso tenha alguma dúvida. Se precisar 
 {% include get-capitulo.html page_serie="slimframework" %}
 {% include menus.html %}
 
-## Capítulo 6 - Expressões Regulares
+## Capítulo 6 - Twig um template engine para PHP
+
+{% include get-capitulo.html page_serie="twig" %}
+{% include menus.html %}
+
+## Capítulo 7 - Expressões Regulares
 
 {% include get-capitulo.html page_serie="regex" %}
 {% include menus.html %}

@@ -13,6 +13,11 @@ e legibilidade de seu código. Eu não quero convencê-lo de que o Twig seja lid
 Quero destacar alguns pontos que penso (acho) serem os motivadores que justificam o uso da ferramenta. Não é uma lista
 completa, até porque não quero me algonar nessa questão, mas espero dar um perspectiva de como é a ferramenta.
 
+Dúvido muito que só com estes exemplos alguém consiga decidir se usa ou não a ferramenta, infelizmente você terá que 
+botar a mão na massa, se sujar um pouco e, dessa forma, poder decidir se vale apena ou não investir a ferramenta em seus
+projetos. 
+
+
 
 ## A linha divisória de sua view (visão)
 
@@ -60,6 +65,9 @@ echo $twig->render('views/index.html', array(
     'product' => $product
 ));
 ```
+
+O leitor atento já percebeu que faltou ilustrar o código do arquivo `views/index.html`, como o exemplo poderia ser
+o bastante variado eu preferi deixar essa tarefa para o próximo tópico.
 
 
 

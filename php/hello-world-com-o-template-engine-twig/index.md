@@ -1,6 +1,6 @@
 ---
 title:       Hello World com o template engine Twig para PHP
-description: Neste artigo além do hello world veremos também como isntalar o Tiwg através do composer
+description: Neste artigo além do hello world veremos também como instalar o Tiwg através do composer
 capitulo:    "twig"
 ordem:       2
 ---

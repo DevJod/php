@@ -24,7 +24,7 @@ a {
 a.link-externo {
   color: #c93900;
   padding-right: 15px;
-  background: url(/assets/icon-external-link.gif) right top no-repeat;
+  background: url(/php/assets/icon-external-link.gif) right top no-repeat;
 }
 a:hover, a:focus {
     color: #666;
